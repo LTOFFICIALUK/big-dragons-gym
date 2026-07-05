@@ -2,6 +2,7 @@
 
 import { Clock, Dumbbell, MapPin, Users, UtensilsCrossed, type LucideIcon } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
+import { SectionTransition } from "@/components/ui/SectionTransition";
 import { useTranslations } from "next-intl";
 
 const uspIcons: LucideIcon[] = [Clock, Dumbbell, UtensilsCrossed, Users, MapPin];
@@ -39,7 +40,7 @@ export const USPSection = () => {
   return (
     <>
       <section
-        className="border-y border-black/5 bg-gray-100 py-6 md:py-8"
+        className="relative border-y border-black/5 bg-gray-100 py-6 md:py-8"
         aria-label={t("uspMarqueeLabel")}
       >
         <div className="usp-marquee usp-marquee-mask overflow-hidden">
@@ -57,9 +58,10 @@ export const USPSection = () => {
             ))}
           </div>
         </div>
+        <SectionTransition fill="white" edge="bottom" size="sm" />
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="relative section-padding bg-white">
         <div className="container-narrow">
           <FadeIn className="text-center">
             <h2 className="font-display text-3xl tracking-wide text-maroon sm:text-4xl md:text-5xl">

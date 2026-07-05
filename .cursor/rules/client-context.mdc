@@ -19,6 +19,8 @@ Read **`WEBSITE-BRIEF.md`** first (master spec). Summary in `BRIEF.md`.
 
 Design polish + remaining pages. Header was cleaned — continue premium mobile-first UI with subtle animations.
 
+**Section notches:** angular chevron transitions between maroon / white / gray — use `SectionTransition` on every major colour change (matches crest/shield brand).
+
 ## Must respect
 
 - Brand tokens: `#C62828`, `#4A1212` — see WEBSITE-BRIEF §10

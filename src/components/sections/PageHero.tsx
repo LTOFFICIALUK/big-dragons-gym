@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { SectionTransition } from "@/components/ui/SectionTransition";
 
 type PageHeroProps = {
   title: string;
@@ -42,9 +43,6 @@ export const PageHero = ({
         {children && <div className="mt-8">{children}</div>}
       </FadeIn>
     </div>
-    <div
-      className="h-6 bg-maroon angular-divider"
-      aria-hidden="true"
-    />
+    <SectionTransition fill="white" edge="bottom" size="sm" />
   </section>
 );

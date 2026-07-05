@@ -43,6 +43,7 @@ export default async function HomePage({ params }: Props) {
         subtitle={t("finalCtaSubtitle")}
         primaryLabel={tCta("bookPT")}
         secondaryLabel={tCta("callUs")}
+        transitionFrom="gray-100"
       />
     </>
   );

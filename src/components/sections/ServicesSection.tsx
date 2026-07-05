@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { IMAGES } from "@/lib/constants";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
+import { SectionTransition } from "@/components/ui/SectionTransition";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -28,7 +29,7 @@ export const ServicesSection = () => {
   const tCta = useTranslations("cta");
 
   return (
-    <section className="section-padding bg-white">
+    <section className="relative section-padding bg-white">
       <div className="container-narrow">
         <FadeIn className="text-center">
           <h2 className="font-display text-4xl tracking-wide text-maroon md:text-5xl">
@@ -77,6 +78,7 @@ export const ServicesSection = () => {
           ))}
         </StaggerContainer>
       </div>
+      <SectionTransition fill="gray-100" edge="bottom" size="sm" />
     </section>
   );
 };

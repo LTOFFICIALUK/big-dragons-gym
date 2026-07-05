@@ -62,8 +62,13 @@
     @apply rounded bg-white p-6 shadow-sm ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-8;
   }
 
+  .section-notch {
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 72%);
+  }
+
+  /* @deprecated — use .section-notch */
   .angular-divider {
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 72%);
   }
 
   .usp-marquee-mask {
@@ -116,6 +121,11 @@
 
   .usp-marquee-duplicate {
     display: none;
+  }
+
+  .section-notch {
+    clip-path: none;
+    height: 0.25rem;
   }
 
   *,

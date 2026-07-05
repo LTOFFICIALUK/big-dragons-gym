@@ -1,6 +1,7 @@
 "use client";
 
 import { HeroLocationMap } from "@/components/sections/HeroLocationMap";
+import { SectionTransition } from "@/components/ui/SectionTransition";
 import { Link } from "@/i18n/navigation";
 import { BUSINESS, IMAGES } from "@/lib/constants";
 import { motion, useReducedMotion } from "framer-motion";
@@ -60,10 +61,7 @@ export const HomeHero = () => {
         </div>
       </div>
 
-      <div
-        className="absolute bottom-0 left-0 right-0 h-8 bg-white angular-divider rotate-180"
-        aria-hidden="true"
-      />
+      <SectionTransition fill="gray-100" edge="bottom" size="md" />
     </section>
   );
 };

@@ -9,7 +9,7 @@ export const SocialSection = () => {
   const t = useTranslations("home");
 
   return (
-    <section className="section-padding bg-gray-100">
+    <section className="relative section-padding bg-gray-100">
       <div className="container-narrow">
         <FadeIn className="text-center">
           <h2 className="font-display text-3xl tracking-wide text-maroon sm:text-4xl md:text-5xl">
