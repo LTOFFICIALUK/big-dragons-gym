@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "siteName": "Big Dragons Gym",
+    "defaultDescription": "Campfa 24/7 yn Llan Ffestiniog, Gogledd Cymru. Hyfforddi personol, cyngor bwyta iach, a mynediad campfa 24 awr gyda Dei."
+  },
+  "nav": {
+    "home": "Hafan",
+    "about": "Amdanom",
+    "services": "Gwasanaethau",
+    "personalTraining": "Hyfforddi Personol",
+    "nutrition": "Bwyd",
+    "membership": "Aelodaeth",
+    "location": "Lleoliad",
+    "contact": "Cysylltu",
+    "blog": "Blog",
+    "faq": "Cwestiynau",
+    "openMenu": "Agor y ddewislen",
+    "closeMenu": "Cau'r ddewislen"
+  },
+  "language": {
+    "en": "EN",
+    "cy": "CY",
+    "english": "English",
+    "cymraeg": "Cymraeg"
+  },
+  "cta": {
+    "bookPT": "Archebu Hyfforddi Personol",
+    "bookPTHeader": "Archebu HP",
+    "callDei": "Ffonio Dei",
+    "whatsapp": "WhatsApp",
+    "enquire": "Ymholi",
+    "getDirections": "Cyfarwyddiadau",
+    "contactForRates": "Cysylltwch â Dei am brisiau",
+    "joinNow": "Ymholi am Aelodaeth",
+    "readMore": "Darllen mwy",
+    "viewAllPosts": "Gweld yr holl bostiadau",
+    "sendEnquiry": "Anfon Ymholiad"
+  },
+  "home": {
+    "metaTitle": "Big Dragons Gym — Campfa 24/7 yn Llan Ffestiniog, Gogledd Cymru",
+    "metaDescription": "Hyfforddi personol, cyngor bwyta iach, a mynediad campfa 24/7 yn Llan Ffestiniog. Hyffordd ar eich amser chi yn y campfa premium lleol.",
+    "h1": "Big Dragons Gym — Campfa 24/7 yn Llan Ffestiniog, Gogledd Cymru",
+    "heroSubline": "Hyfforddi personol, cyngor bwyta iach, a mynediad 24 awr — eich campfa leol yng nghanol Llan Ffestiniog.",
+    "usps": {
+      "open247": "Ar agor 24/7",
+      "ptWithDei": "Hyfforddi personol gyda Dei",
+      "nutrition": "Cyngor bwyta iach",
+      "community": "Campfa gymunedol Gogledd Cymru",
+      "location": "Capel Jerwsalem, Stryd Fawr — hawdd ei ddarganfod"
+    },
+    "servicesTitle": "Hyfforddiant wedi'i Adeiladu O'ch Cwmpas Chi",
+    "servicesSubtitle": "Hyfforddi arbenigol, bwyta iach ymarferol, a mynediad di-derfyn — popeth sydd ei angen o dan un to.",
+    "services": {
+      "pt": {
+        "title": "Hyfforddi Personol",
+        "description": "Hyfforddi un-i-un gyda Dei — gosod nodau, dylunio rhaglenni, a hyfforddi ffurf ar gyfer pob lefel."
+      },
+      "nutrition": {
+        "title": "Cyngor Bwyta Iach",
+        "description": "Cynllunio prydau ymarferol a hyfforddi arferion sy'n cyd-fynd â'ch nodau hyfforddi — dim dietau ffug."
+      },
+      "membership": {
+        "title": "Aelodaeth 24/7",
+        "description": "Hyfforddwch pryd bynnag sy'n addas i chi. Mynediad campfa llawn 24 awr y dydd yng nghanol Llan Ffestiniog."
+      }
+    },
+    "whyTitle": "Pam Big Dragons Gym",
+    "whySubtitle": "Amgylchedd hyfforddi premium gyda dull di-fwdwl, gymuned-gyntaf.",
+    "whyPoints": {
+      "local": {
+        "title": "Perchnogol Lleol",
+        "description": "Campfa Gogledd Cymru wedi'i hadeiladu ar gyfer y gymuned — nid francise di-enw."
+      },
+      "supportive": {
+        "title": "Amgylchedd Cefnogol",
+        "description": "Croeso i ddechreuwyr a lifters profiadol fel ei gilydd. Pobl go iawn, cynnydd go iawn."
+      },
+      "noNonsense": {
+        "title": "Hyfforddiant Di-Fwdwl",
+        "description": "Offer difrifol, hyfforddi difrifol, dim chwinciadau. Dim ond gwaith caled sy'n cyflawni."
+      },
+      "access": {
+        "title": "Bob Amser ar Agor",
+        "description": "Bore cynnar, nos hwyr, gweithwyr shifft — hyfforddwch ar eich amser chi, 24/7."
+      }
+    },
+    "socialTitle": "O Llawr y Campfa",
+    "socialSubtitle": "Dilynwch ein taith ar gyfryngau cymdeithasol am awgrymiadau hyfforddi, uchafbwyntiau aelodau, a diweddariadau gymunedol.",
+    "locationTitle": "Dewch i'n Darganfod ar Stryd Fawr",
+    "locationNote": "Mae Big Dragons Gym y tu mewn i Gapl Jerwsalem ar 32 Stryd Fawr — busnes ar wahân i Little Dragons Softplay yn yr un adeilad.",
+    "finalCtaTitle": "Barod i Hyfforddi?",
+    "finalCtaSubtitle": "Cysylltwch â Dei heddiw — croeso ymholiadau am hyfforddi personol, bwyta iach, neu aelodaeth 24/7."
+  },
+  "about": {
+    "metaTitle": "Amdanom Big Dragons Gym | Llan Ffestiniog",
+    "metaDescription": "Dysgwch am Big Dragons Gym — cyfleuster campfa 24/7 premium yn Llan Ffestiniog, Gogledd Cymru.",
+    "h1": "Amdanom Big Dragons Gym",
+    "intro": "Mae Big Dragons Gym yn gyfleuster campfa 24/7 yng nghanol Llan Ffestiniog, Gogledd Cymru. Campfa perchnogol lleol gydag amgylchedd hyfforddi premium — wedi'i hadeiladu ar gyfer pobl sy'n cymryd eu hyfforddiant o ddifrif.",
+    "missionTitle": "Ein Cenhadaeth",
+    "mission": "Darparu mynediad di-derfyn i gyfleusterau hyfforddi o safon a hyfforddi arbenigol mewn amgylchedd cefnogol, gyrru gan y gymuned.",
+    "distinctTitle": "Campfa, Nid Softplay",
+    "distinct": "Rydym wedi'u lleoli y tu mewn i Gapl Jerwsalem ar 32 Stryd Fawr — yr un adeilad â Little Dragons Softplay, ond busnes gwbl ar wahân.",
+    "valuesTitle": "Beth Rydym yn Ei Gredu",
+    "values": {
+      "access": "Mynediad 24/7 — hyfforddwch ar eich amser chi",
+      "coaching": "Hyfforddi personol arbenigol gyda Dei",
+      "community": "Gymuned hyfforddi Gogledd Cymru croesawgar",
+      "quality": "Offer premium mewn amgylchedd glân, proffesiynol"
+    }
+  },
+  "personalTraining": {
+    "metaTitle": "Hyfforddwr Personol Llan Ffestiniog | Big Dragons Gym",
+    "metaDescription": "Hyfforddi personol yn Llan Ffestiniog a Gogledd Cymru gyda Dei.",
+    "h1": "Hyfforddi Personol yn Llan Ffestiniog",
+    "intro": "Gweithiwch un-i-un gyda Dei yn Big Dragons Gym — hyfforddi personol wedi'i ddylunio o amgylch eich nodau, profiad, ac amserlen.",
+    "aboutDeiTitle": "Cyfarfod Dei",
+    "aboutDei": "Dei yw wyneb Big Dragons Gym — hawdd ei gyfarfod, profiadol, ac wedi ymrwymo i'ch helpu i hyfforddi'n g smarter.",
+    "includesTitle": "Beth Sy'n Cynhwysedig",
+    "includes": {
+      "goals": "Gosod nodau a thracio cynnydd",
+      "programme": "Dylunio rhaglenni personol",
+      "form": "Hyfforddi ffurf a mireinio techneg",
+      "accountability": "Cefnogaeth barhaus ac atebolrwydd",
+      "environment": "Mynediad i gyfleuster hyfforddi premium"
+    },
+    "forWhoTitle": "I Bwy Mae",
+    "forWho": "Dechreuwyr cyflawn sy'n adeiladu hyder. Lifters profiadol yn erl y PBs newydd. Unrhyw un sydd eisiau arweiniad arbenigol mewn amgylchedd premium, di-fwdwl.",
+    "pricingNote": "Mae prisiau'n amrywio yn dibynnu ar amlder sesiynau a nodau. Cysylltwch â Dei am dyfynbris personol.",
+    "faqTitle": "Cwestiynau Cyffredin am Hyfforddi Personol",
+    "faqs": {
+      "q1": "A oes angen profiad i ddechrau hyfforddi personol?",
+      "a1": "Dim o gwbl. Mae Dei yn gweithio gyda dechreuwyr cyflawn hyd at lifters profiadol.",
+      "q2": "Pa mor hir yw sesiynau?",
+      "a2": "Mae hyd sesiwn yn dibynnu ar eich rhaglen. Cysylltwch â Dei i drafod beth sy'n gweithio orau.",
+      "q3": "A allaf gyfuno HP gyda aelodaeth 24/7?",
+      "a3": "Ydy. Mae llawer o aelodau yn cyfuno sesiynau hyfforddi personol â mynediad campfa 24/7 annibynnol.",
+      "q4": "Ble mae'r hyfforddiant yn digwydd?",
+      "a4": "Mae pob sesiwn yn digwydd yn Big Dragons Gym, Capel Jerwsalem, 32 Stryd Fawr, Llan Ffestiniog."
+    }
+  },
+  "nutrition": {
+    "metaTitle": "Cyngor Bwyta Iach | Big Dragons Gym Gogledd Cymru",
+    "metaDescription": "Cyngor bwyta iach ymarferol a chefnogaeth cynllunio prydau yn Big Dragons Gym, Llan Ffestiniog.",
+    "h1": "Cyngor Bwyta Iach a Hyfforddi",
+    "intro": "Mae hyfforddiant a bwyta iach yn mynd law yn llaw. Rydym yn cynnig cyngor bwyta iach ymarferol — nid cyngor meddygol, ond cefnogaeth ymarferol i bweru eich cynnydd.",
+    "approachTitle": "Ein Dull",
+    "approach": "Rydym yn canolbwyntio ar arferion cynaliadwy, nid dietau chwistrell. Cefnogaeth cynllunio prydau a chyd-fynd â'ch nodau hyfforddi.",
+    "includesTitle": "Beth Rydym yn ei Gynnwys",
+    "includes": {
+      "planning": "Cynllunio prydau a chyfarwyddyd paratoi",
+      "habits": "Hyfforddi arferion ar gyfer newid parhaol",
+      "alignment": "Bwyta iach sy'n cyd-fynd â nodau hyfforddi",
+      "support": "Cefnogaeth barhaus ochr yn ochr â'ch rhaglen campfa"
+    },
+    "disclaimer": "Mae ein cyngor bwyta iach ar gyfer dibenion ffitrwydd cyffredinol yn unig ac nid yw'n ddewis i gyngor proffesiynol meddygol neu ddeietegol.",
+    "linkPT": "Mae hyfforddi bwyta iach yn gweithio orau ochr yn ochr â hyfforddi personol. Gofynnwch i Dei am becynnau cyfunol."
+  },
+  "membership": {
+    "metaTitle": "Campfa 24 Awr Llan Ffestiniog | Big Dragons Gym",
+    "metaDescription": "Ymunwch â Big Dragons Gym am fynediad 24/7 yn Llan Ffestiniog, Gogledd Cymru.",
+    "h1": "Aelodaeth Campfa 24/7",
+    "intro": "Mae'r rhan fwyaf o gemau yn cau'n gynnar. Nid yw Big Dragons Gym. Hyfforddwch ar eich amser chi — 24 awr y dydd, 7 diwrnod yr wythnos.",
+    "uspTitle": "Pam Mae Mynediad 24/7 yn Bwysig",
+    "usp": "Gweithwyr shifft, rhai sy'n codi'n gynnar, hwylfawr nos — nid yw bywyd yn ffitio amserlen campfa 9-i-5.",
+    "includesTitle": "Beth Sy'n Cynhwysedig",
+    "includes": {
+      "access": "Mynediad campfa llawn 24/7",
+      "equipment": "Offer rhydd premium a chyfarpar hyfforddi",
+      "facility": "Amgylchedd hyfforddi glân, proffesiynol",
+      "community": "Gymuned campfa Gogledd Cymru gefnogol"
+    },
+    "howToJoinTitle": "Sut i Ymuno",
+    "howToJoin": "Cysylltwch â Dei i drafod opsiynau aelodaeth a chael eich sefydlu.",
+    "safetyTitle": "Mynediad a Diogelwch",
+    "safety": "Mae aelodau yn derbyn cyfarwyddiadau mynediad clir wrth ymuno. Mae'r cyfleuster yn cael ei fonitro a'i gynnal i safon uchel."
+  },
+  "location": {
+    "metaTitle": "Dewch i'n Darganfod | Campfa Llan Ffestiniog LL41 3AL",
+    "metaDescription": "Big Dragons Gym yn Capel Jerwsalem, 32 Stryd Fawr, Llan Ffestiniog LL41 3AL.",
+    "h1": "Dewch o Hyd i Big Dragons Gym",
+    "intro": "Rydym ar Stryd Fawr yng nghanol Llan Ffestiniog — hawdd i'w gyrraedd o'r A470, pentrefi lleol, a rhai Conwy.",
+    "addressTitle": "Cyfeiriad",
+    "buildingNote": "Mae Big Dragons Gym y tu mewn i Gapl Jerwsalem ar 32 Stryd Fawr. Busnes ar wahân i Little Dragons Softplay — chwiliwch am fynedfa'r campfa.",
+    "directionsTitle": "Cyfarwyddiadau",
+    "directions": {
+      "a470": {
+        "title": "O'r A470",
+        "text": "Cymerwch yr A470 i ganol tref Llan Ffestiniog. Parhewch i Stryd Fawr — mae Capel Jerwsalem ar Stryd Fawr rhif 32."
+      },
+      "station": {
+        "title": "O Orsaf Llan Ffestiniog",
+        "text": "Mae'r orsaf drenau gerllaw Stryd Fawr (tua 5–10 munud ar droed). Cyfeiriwch tuag at ganol y dref."
+      },
+      "betws": {
+        "title": "O Betws-y-Coed / Cwm Conwy",
+        "text": "Dilynwch yr A470 tua'r gogledd tuag at Llan Ffestiniog. Mae Stryd Fawr yng nghanol y dref."
+      },
+      "dolwyddelan": {
+        "title": "O Dolwyddelan / Penmachno",
+        "text": "Cymerwch ffyrdd lleol i'r A470, yna dilynwch arwyddion i ganol Llan Ffestiniog. Rydym ar Stryd Fawr."
+      }
+    },
+    "parkingTitle": "Parcio",
+    "parking": "Mae parcio stryd ar gael ar Stryd Fawr a'r ardal o'i chwmpas. Cadwch at restriccau parcio lleol.",
+    "areasTitle": "Gwasanaethu Gogledd Cymru",
+    "areas": "Mae Big Dragons Gym yn croesawu aelodau o Lan Ffestiniog, Ffestiniog, Dolwyddelan, Penrhyndeudraeth, Betws-y-Coed, a'r ardal Eryri a Gwynedd ehangach."
+  },
+  "contact": {
+    "metaTitle": "Cysylltu â Big Dragons Gym | Llan Ffestiniog",
+    "metaDescription": "Cysylltwch â Dei yn Big Dragons Gym. Ffoniwch, WhatsApp, neu anfonwch ymholiad.",
+    "h1": "Cysylltu â Ni",
+    "intro": "Cwestiwn am hyfforddi personol, bwyta iach, neu aelodaeth? Bydd Dei yn cysylltu â chi cyn gynted â phosibl.",
+    "formTitle": "Anfon Ymholiad",
+    "form": {
+      "name": "Enw Llawn",
+      "phone": "Rhif Ffôn",
+      "email": "Cyfeiriad E-bost",
+      "interest": "Mae gen i ddiddordeb mewn",
+      "message": "Eich Neges",
+      "gdpr": "Rwy'n cytuno i Big Dragons Gym storio fy manylion i ymateb i'r ymholiad hwn.",
+      "privacyLink": "Polisi Preifatrwydd",
+      "interests": {
+        "pt": "Hyfforddi Personol",
+        "nutrition": "Bwyd",
+        "membership": "Aelodaeth",
+        "general": "Ymholiad Cyffredinol"
+      },
+      "success": "Diolch — mae eich ymholiad wedi'i anfon. Bydd Dei mewn cysylltiad yn fuan.",
+      "error": "Aeth rhywbeth o'i le. Ceisiwch eto neu ffoniwch Dei yn uniongyrchol."
+    },
+    "directTitle": "Yn Well siarad?",
+    "directSubtitle": "Ffoniwch neu anfonwch neges at Dei yn uniongyrchol."
+  },
+  "blog": {
+    "metaTitle": "Blog | Big Dragons Gym Gogledd Cymru",
+    "metaDescription": "Awgrymiadau hyfforddi a newyddion campfa o Big Dragons Gym yn Llan Ffestiniog.",
+    "h1": "Blog",
+    "intro": "Mewnwelediadau hyfforddi, awgrymiadau ffitrwydd lleol, a newyddion o Big Dragons Gym.",
+    "author": "Dei · Big Dragons Gym",
+    "readTime": "{minutes} mun darllen"
+  },
+  "faq": {
+    "metaTitle": "Cwestiynau Cyffredin | Big Dragons Gym",
+    "metaDescription": "Cwestiynau cyffredin am Big Dragons Gym — mynediad 24/7, hyfforddi personol, aelodaeth, a lleoliad.",
+    "h1": "Cwestiynau Cyffredin",
+    "intro": "Popeth sydd angen i chi ei wybod am hyfforddi yn Big Dragons Gym.",
+    "items": {
+      "q1": "A yw Big Dragons Gym ar agor 24/7?",
+      "a1": "Ydy. Mae Big Dragons Gym ar agor 24 awr y dydd, 7 diwrnod yr wythnos i aelodau.",
+      "q2": "A yw hwn yr un peth â Little Dragons Softplay?",
+      "a2": "Nac ydy. Mae Big Dragons Gym a Little Dragons Softplay yn rhannu adeilad Capel Jerwsalem ar 32 Stryd Fawr, ond busnesau gwbl ar wahân ydynt.",
+      "q3": "A ydych chi'n cynnig hyfforddi personol?",
+      "a3": "Ydyn. Mae Dei yn cynnig hyfforddi personol un-i-un ar gyfer pob lefel.",
+      "q4": "Sut ydw i'n ymuno?",
+      "a4": "Cysylltwch â Dei dros y ffôn, WhatsApp, neu'r ffurflen ymholi ar ein gwefan.",
+      "q5": "Ble rydych chi wedi'ch lleoli?",
+      "a5": "Capel Jerwsalem, 32 Stryd Fawr, Llan Ffestiniog, LL41 3AL — yng nghanol y dref ar Stryd Fawr.",
+      "q6": "A ydych chi'n cynnig cyngor bwyta iach?",
+      "a6": "Ydyn. Rydym yn cynnig cyngor bwyta iach ymarferol a hyfforddi arferion i gefnogi eich nodau hyfforddi."
+    }
+  },
+  "privacy": {
+    "metaTitle": "Polisi Preifatrwydd | Big Dragons Gym",
+    "h1": "Polisi Preifatrwydd",
+    "content": "Mae Big Dragons Gym yn parchu eich preifatrwydd. Rydym yn casglu dim ond y wybodaeth a roddwch trwy ein ffurflen gysylltu i ymateb i'ch ymholiad."
+  },
+  "cookies": {
+    "metaTitle": "Polisi Cwcis | Big Dragons Gym",
+    "h1": "Polisi Cwcis",
+    "content": "Mae'r wefan hon yn defnyddio cwcis hanfodol ar gyfer dewis iaith a swyddogaeth sylfaenol. Efallai y byddwn yn defnyddio cwcis dadansoddi i ddeall sut mae ymwelwyr yn defnyddio ein safle."
+  },
+  "footer": {
+    "tagline": "Campfa 24/7 yn Llan Ffestiniog",
+    "open247": "Ar agor 24/7",
+    "callDei": "Ffonio Dei",
+    "quickLinks": "Dolenni Cyflym",
+    "legal": "Cyfreithiol",
+    "privacy": "Preifatrwydd",
+    "cookies": "Cwcis",
+    "rights": "Cedwir pob hawl."
+  },
+  "notFound": {
+    "title": "Heb Ddarganfod y Dudalen",
+    "description": "Mae'n ddrwg gennym, ni allem ddarganfod y dudalen honno.",
+    "backHome": "Nôl i'r Hafan",
+    "contact": "Cysylltu â Ni"
+  }
+}

@@ -1,0 +1,32 @@
+---
+description: Big Dragons Gym — brand, pages, and build context
+alwaysApply: true
+---
+
+# Big Dragons Gym
+
+Read **`WEBSITE-BRIEF.md`** first (master spec). Summary in `BRIEF.md`.
+
+## Client
+
+- **Business:** Big Dragons Gym
+- **Industry:** 24/7 gym, personal training, nutrition — local North Wales
+- **Location:** Jerusalem Chapel, 32 High Street, Blaenau-Ffestiniog, LL41 3AL
+- **Contact:** Dei · +44 7940 125381
+- **Site folder:** `clients/big-dragons-gym/`
+
+## Build focus
+
+Design polish + remaining pages. Header was cleaned — continue premium mobile-first UI with subtle animations.
+
+## Must respect
+
+- Brand tokens: `#C62828`, `#4A1212` — see WEBSITE-BRIEF §10
+- EN default + full Welsh `/cy/` — subtle nav toggle
+- Not Little Dragons Softplay — separate gym NAP/copy
+- Real social photos first; Unsplash/Pexels only where thin
+- No fake prices, hours, or reviews
+
+## Portal
+
+Track todos in client-portal. Use checklist **Cursor prompt** buttons for SEO/GEO/GSC/GA4.
