@@ -179,22 +179,24 @@
   },
   "membership": {
     "metaTitle": "Campfa 24 Awr Llan Ffestiniog | Big Dragons Gym",
-    "metaDescription": "Ymunwch â Big Dragons Gym am fynediad 24/7 yn Llan Ffestiniog, Gogledd Cymru.",
-    "h1": "Aelodaeth Campfa 24/7",
-    "intro": "Mae'r rhan fwyaf o gemau yn cau'n gynnar. Nid yw Big Dragons Gym. Hyfforddwch ar eich amser chi — 24 awr y dydd, 7 diwrnod yr wythnos.",
-    "uspTitle": "Pam Mae Mynediad 24/7 yn Bwysig",
+    "metaDescription": "Ymunwch â Big Dragons Gym am fynediad amser o'r dydd yn Llan Ffestiniog.",
+    "h1": "Aelodaeth Campfa",
+    "intro": "Mae'r rhan fwyaf o gemau yn cau'n gynnar. Nid yw Big Dragons Gym. Hyfforddwch ar eich amser chi — unrhyw bryd, dydd neu nos.",
+    "uspTitle": "Hyfforddwch ar Eich Amser Chi",
     "usp": "Gweithwyr shifft, rhai sy'n codi'n gynnar, hwylfawr nos — nid yw bywyd yn ffitio amserlen campfa 9-i-5.",
     "includesTitle": "Beth Sy'n Cynhwysedig",
     "includes": {
-      "access": "Mynediad campfa llawn 24/7",
+      "access": "Mynediad campfa unrhyw bryd, dydd neu nos",
       "equipment": "Offer rhydd premium a chyfarpar hyfforddi",
       "facility": "Amgylchedd hyfforddi glân, proffesiynol",
-      "community": "Gymuned campfa Gogledd Cymru gefnogol"
+      "community": "Gymuned campfa leol gefnogol"
     },
     "howToJoinTitle": "Sut i Ymuno",
-    "howToJoin": "Cysylltwch â Dei i drafod opsiynau aelodaeth a chael eich sefydlu.",
+    "howToJoin": "Cysylltwch â ni i drafod opsiynau aelodaeth a chael eich sefydlu.",
     "safetyTitle": "Mynediad a Diogelwch",
-    "safety": "Mae aelodau yn derbyn cyfarwyddiadau mynediad clir wrth ymuno. Mae'r cyfleuster yn cael ei fonitro a'i gynnal i safon uchel."
+    "safety": "Mae aelodau yn derbyn cyfarwyddiadau mynediad clir wrth ymuno. Mae'r cyfleuster yn cael ei fonitro a'i gynnal i safon uchel.",
+    "ctaTitle": "Barod i ymuno?",
+    "ctaSubtitle": "Cysylltwch i drafod opsiynau aelodaeth a chael eich sefydlu gyda mynediad."
   },
   "location": {
     "metaTitle": "Dewch i'n Darganfod | Campfa Llan Ffestiniog LL41 3AL",

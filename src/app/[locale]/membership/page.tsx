@@ -3,10 +3,18 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Link } from "@/i18n/navigation";
 import { IMAGES } from "@/lib/constants";
+import { Clock, Dumbbell, ShieldCheck, Users, type LucideIcon } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
   params: Promise<{ locale: string }>;
+};
+
+const includeIcons: Record<"access" | "equipment" | "facility" | "community", LucideIcon> = {
+  access: Clock,
+  equipment: Dumbbell,
+  facility: ShieldCheck,
+  community: Users,
 };
 
 export const generateMetadata = async ({ params }: Props) => {
@@ -47,12 +55,22 @@ export default async function MembershipPage({ params }: Props) {
               {t("includesTitle")}
             </h2>
             <ul className="mt-6 grid gap-4 sm:grid-cols-2">
-              {includes.map((key) => (
-                <li key={key} className="card-premium">
-                  <span className="font-display text-2xl text-primary-red">24/7</span>
-                  <p className="mt-2 text-brand-black/80">{t(`includes.${key}`)}</p>
-                </li>
-              ))}
+              {includes.map((key) => {
+                const Icon = includeIcons[key];
+
+                return (
+                  <li key={key} className="card-premium">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-red/10">
+                      <Icon
+                        className="h-5 w-5 text-primary-red"
+                        strokeWidth={1.75}
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <p className="mt-3 text-brand-black/80">{t(`includes.${key}`)}</p>
+                  </li>
+                );
+              })}
             </ul>
           </FadeIn>
 
@@ -80,8 +98,8 @@ export default async function MembershipPage({ params }: Props) {
       </section>
 
       <CTABand
-        title={t("h1")}
-        subtitle={t("intro")}
+        title={t("ctaTitle")}
+        subtitle={t("ctaSubtitle")}
         primaryLabel={tCta("joinNow")}
         secondaryLabel={tCta("callUs")}
       />

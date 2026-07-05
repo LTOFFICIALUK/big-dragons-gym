@@ -179,22 +179,24 @@
   },
   "membership": {
     "metaTitle": "24 Hour Gym Blaenau Ffestiniog | Big Dragons Gym",
-    "metaDescription": "Join Big Dragons Gym for 24/7 access in Blaenau Ffestiniog, North Wales. Train whenever suits you — early mornings, late nights, any day.",
-    "h1": "24/7 Gym Membership",
-    "intro": "Most gyms close early. Big Dragons Gym doesn't. Train on your schedule — 24 hours a day, 7 days a week.",
-    "uspTitle": "Why 24/7 Access Matters",
+    "metaDescription": "Join Big Dragons Gym for round-the-clock access in Blaenau Ffestiniog. Train whenever suits you — early mornings, late nights, any day.",
+    "h1": "Gym Membership",
+    "intro": "Most gyms close early. Big Dragons Gym doesn't. Train on your schedule — any time, day or night.",
+    "uspTitle": "Train on Your Schedule",
     "usp": "Shift workers, early risers, night owls — life doesn't fit a 9-to-5 gym schedule. At Big Dragons Gym, the doors are always open.",
     "includesTitle": "What's Included",
     "includes": {
-      "access": "Full 24/7 gym access",
+      "access": "Gym access any time, day or night",
       "equipment": "Premium free weights and training equipment",
       "facility": "Clean, professional training environment",
-      "community": "Supportive North Wales gym community"
+      "community": "Supportive local gym community"
     },
     "howToJoinTitle": "How to Join",
     "howToJoin": "Contact us to discuss membership options and get set up. We'll walk you through access instructions and answer any questions.",
     "safetyTitle": "Access & Safety",
-    "safety": "Members receive clear access instructions upon joining. The facility is monitored and maintained to a high standard for safe training at any hour."
+    "safety": "Members receive clear access instructions upon joining. The facility is monitored and maintained to a high standard for safe training at any hour.",
+    "ctaTitle": "Ready to join?",
+    "ctaSubtitle": "Get in touch to discuss membership options and get set up with access."
   },
   "location": {
     "metaTitle": "Find Us | Gym Blaenau Ffestiniog LL41 3AL",
