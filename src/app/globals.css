@@ -65,11 +65,57 @@
   .angular-divider {
     clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
   }
+
+  .usp-marquee-mask {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 8%,
+      black 92%,
+      transparent
+    );
+  }
+
+  .usp-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: usp-marquee 32s linear infinite;
+  }
+
+  .usp-marquee:hover .usp-marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes usp-marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .usp-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .usp-marquee-mask {
+    mask-image: none;
+  }
+
+  .usp-marquee-duplicate {
+    display: none;
   }
 
   *,

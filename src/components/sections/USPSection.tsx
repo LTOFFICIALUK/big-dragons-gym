@@ -1,3 +1,5 @@
+"use client";
+
 import { Clock, Dumbbell, MapPin, Users, UtensilsCrossed, type LucideIcon } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
 import { useTranslations } from "next-intl";
@@ -5,40 +7,55 @@ import { useTranslations } from "next-intl";
 const uspIcons: LucideIcon[] = [Clock, Dumbbell, UtensilsCrossed, Users, MapPin];
 const whyKeys = ["local", "supportive", "noNonsense", "access"] as const;
 
+type UspItemProps = {
+  label: string;
+  Icon: LucideIcon;
+  duplicate?: boolean;
+};
+
+const UspItem = ({ label, Icon, duplicate = false }: UspItemProps) => (
+  <div
+    className={`flex shrink-0 items-center gap-3 px-4 sm:px-6${duplicate ? " usp-marquee-duplicate" : ""}`}
+    aria-hidden={duplicate || undefined}
+  >
+    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-black/5">
+      <Icon className="h-5 w-5 text-primary-red" strokeWidth={1.75} aria-hidden="true" />
+    </div>
+    <p className="whitespace-nowrap text-sm font-semibold text-maroon sm:text-base">{label}</p>
+  </div>
+);
+
 export const USPSection = () => {
   const t = useTranslations("home");
 
   const usps = [
-    t("usps.open247"),
-    t("usps.personalTraining"),
-    t("usps.nutrition"),
-    t("usps.community"),
-    t("usps.location"),
+    { label: t("usps.open247"), Icon: uspIcons[0] },
+    { label: t("usps.personalTraining"), Icon: uspIcons[1] },
+    { label: t("usps.nutrition"), Icon: uspIcons[2] },
+    { label: t("usps.community"), Icon: uspIcons[3] },
+    { label: t("usps.location"), Icon: uspIcons[4] },
   ];
 
   return (
     <>
-      <section className="border-y border-black/5 bg-gray-100 py-8 md:py-10">
-        <div className="container-narrow">
-          <StaggerContainer className="grid grid-cols-2 gap-6 md:grid-cols-5 md:gap-8">
-            {usps.map((usp, index) => {
-              const Icon = uspIcons[index];
-
-              return (
-                <StaggerItem
-                  key={usp}
-                  className="flex flex-col items-center text-center"
-                >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-black/5">
-                    <Icon className="h-6 w-6 text-primary-red" strokeWidth={1.75} aria-hidden="true" />
-                  </div>
-                  <p className="mt-3 text-sm font-semibold leading-snug text-maroon md:text-base">
-                    {usp}
-                  </p>
-                </StaggerItem>
-              );
-            })}
-          </StaggerContainer>
+      <section
+        className="border-y border-black/5 bg-gray-100 py-6 md:py-8"
+        aria-label={t("uspMarqueeLabel")}
+      >
+        <div className="usp-marquee usp-marquee-mask overflow-hidden">
+          <div className="usp-marquee-track items-center py-2">
+            {usps.map((usp) => (
+              <UspItem key={usp.label} label={usp.label} Icon={usp.Icon} />
+            ))}
+            {usps.map((usp) => (
+              <UspItem
+                key={`${usp.label}-dup`}
+                label={usp.label}
+                Icon={usp.Icon}
+                duplicate
+              />
+            ))}
+          </div>
         </div>
       </section>
 
