@@ -1,4 +1,3 @@
-import { Link } from "@/i18n/navigation";
 import { BUSINESS } from "@/lib/constants";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { MapDirectionsLight } from "@/components/ui/MapDirections";
@@ -27,15 +26,12 @@ export const LocationStrip = () => {
             <p className="mt-4 rounded bg-maroon/5 p-4 text-sm text-brand-black/70">
               {t("locationNote")}
             </p>
-            <div className="mt-6 flex flex-col gap-3">
-              <MapDirectionsLight
-                googleLabel={tCta("googleMaps")}
-                appleLabel={tCta("appleMaps")}
-              />
-              <Link href="/location" className="btn-outline-dark text-center">
-                {tCta("getDirections")}
-              </Link>
-            </div>
+            <MapDirectionsLight
+              className="mt-6"
+              label={tCta("getDirections")}
+              googleLabel={tCta("googleMaps")}
+              appleLabel={tCta("appleMaps")}
+            />
           </FadeIn>
           <FadeIn delay={0.2}>
             <MapEmbed />

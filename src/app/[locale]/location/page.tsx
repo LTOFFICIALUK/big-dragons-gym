@@ -61,6 +61,7 @@ export default async function LocationPage({ params }: Props) {
               </p>
               <MapDirectionsLight
                 className="mt-6"
+                label={tCta("getDirections")}
                 googleLabel={tCta("googleMaps")}
                 appleLabel={tCta("appleMaps")}
               />

@@ -87,6 +87,8 @@ export default async function ContactPage({ params, searchParams }: Props) {
                 </address>
 
                 <MapDirectionsLight
+                  className="mt-6"
+                  label={tCta("getDirections")}
                   googleLabel={tCta("googleMaps")}
                   appleLabel={tCta("appleMaps")}
                 />

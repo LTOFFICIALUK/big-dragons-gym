@@ -44,6 +44,7 @@ export const Footer = () => {
             </div>
             <MapDirections
               className="w-full lg:max-w-md"
+              showLabel={false}
               googleLabel={tCta("googleMaps")}
               appleLabel={tCta("appleMaps")}
             />
