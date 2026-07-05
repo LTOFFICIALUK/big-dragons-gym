@@ -2,7 +2,7 @@ import { Link } from "@/i18n/navigation";
 import { BUSINESS, IMAGES } from "@/lib/constants";
 import { BuiltByCredit } from "@/components/ui/BuiltByCredit";
 import { MapDirections } from "@/components/ui/MapDirections";
-import { FacebookIcon, InstagramIcon } from "@/components/ui/SocialIcons";
+import { FacebookIconMono, InstagramIconMono } from "@/components/ui/SocialIcons";
 import { MessageCircle } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -83,7 +83,7 @@ export const Footer = () => {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-white hover:text-white"
                 aria-label="Instagram"
               >
-                <InstagramIcon className="h-5 w-5" />
+                <InstagramIconMono className="h-4 w-4" />
               </a>
               <a
                 href={BUSINESS.facebook}
@@ -92,7 +92,7 @@ export const Footer = () => {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-white hover:text-white"
                 aria-label="Facebook"
               >
-                <FacebookIcon className="h-5 w-5" />
+                <FacebookIconMono className="h-4 w-4" />
               </a>
               <a
                 href={BUSINESS.whatsapp}
