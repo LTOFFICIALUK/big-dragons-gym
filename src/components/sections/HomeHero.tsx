@@ -64,7 +64,7 @@ export const HomeHero = () => {
         </div>
       </div>
 
-      <SectionTransition fill="white" size="md" />
+      <SectionTransition fill="gray-100" size="md" />
     </section>
   );
 };
