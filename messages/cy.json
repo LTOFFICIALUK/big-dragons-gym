@@ -262,7 +262,8 @@
     "h1": "Blog",
     "intro": "Mewnwelediadau hyfforddi, awgrymiadau ffitrwydd lleol, a newyddion o Big Dragons Gym.",
     "author": "Dei · Big Dragons Gym",
-    "readTime": "{minutes} mun darllen"
+    "readTime": "{minutes} mun darllen",
+    "relatedReading": "Darllen cysylltiedig"
   },
   "faq": {
     "metaTitle": "Cwestiynau Cyffredin | Big Dragons Gym",

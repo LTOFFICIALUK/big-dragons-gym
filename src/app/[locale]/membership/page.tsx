@@ -1,5 +1,6 @@
 import { CTABand } from "@/components/sections/CTABand";
 import { PageHero } from "@/components/sections/PageHero";
+import { RelatedBlogLink } from "@/components/sections/RelatedBlogLink";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Link } from "@/i18n/navigation";
 import { IMAGES } from "@/lib/constants";
@@ -93,6 +94,11 @@ export default async function MembershipPage({ params }: Props) {
             <p className="mt-4 text-lg leading-relaxed text-brand-black/80">
               {t("safety")}
             </p>
+            <RelatedBlogLink
+              slug="why-big-dragons-gym-24-7-blaenau-ffestiniog"
+              locale={locale}
+              className="mt-8"
+            />
           </FadeIn>
         </div>
       </section>

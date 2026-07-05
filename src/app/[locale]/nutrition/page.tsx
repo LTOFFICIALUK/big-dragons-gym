@@ -1,5 +1,6 @@
 import { CTABand } from "@/components/sections/CTABand";
 import { PageHero } from "@/components/sections/PageHero";
+import { RelatedBlogLink } from "@/components/sections/RelatedBlogLink";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Link } from "@/i18n/navigation";
@@ -67,6 +68,11 @@ export default async function NutritionPage({ params }: Props) {
             <Link href="/contact" className="btn-primary mt-6 inline-flex">
               {tCta("enquire")}
             </Link>
+            <RelatedBlogLink
+              slug="simple-nutrition-tips-gym-goals"
+              locale={locale}
+              className="mt-8"
+            />
           </FadeIn>
         </div>
       </section>

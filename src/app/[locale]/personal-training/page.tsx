@@ -1,5 +1,6 @@
 import { CTABand } from "@/components/sections/CTABand";
 import { PageHero } from "@/components/sections/PageHero";
+import { RelatedBlogLink } from "@/components/sections/RelatedBlogLink";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -113,6 +114,11 @@ export default async function PersonalTrainingPage({ params }: Props) {
             <div className="mt-8">
               <FAQAccordion items={faqs} />
             </div>
+            <RelatedBlogLink
+              slug="personal-training-north-wales-dei"
+              locale={locale}
+              className="mt-8"
+            />
           </FadeIn>
         </div>
       </section>

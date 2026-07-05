@@ -11,7 +11,7 @@ type HeroLocationMapProps = {
 
 export const HeroLocationMap = ({
   className,
-  mapHeight = 280,
+  mapHeight = 300,
   priority = true,
 }: HeroLocationMapProps) => {
   const tCta = useTranslations("cta");
@@ -19,9 +19,11 @@ export const HeroLocationMap = ({
   return (
     <div
       className={cn(
-        "overflow-hidden rounded-xl bg-white shadow-2xl ring-1 ring-black/10",
+        "overflow-hidden rounded-xl bg-white shadow-xl ring-1 ring-black/10 lg:shadow-2xl",
+        "[&_iframe]:!h-[220px] lg:[&_iframe]:!h-[var(--hero-map-h)]",
         className,
       )}
+      style={{ "--hero-map-h": `${mapHeight}px` } as React.CSSProperties}
     >
       <MapEmbed height={mapHeight} priority={priority} className="rounded-none" />
       <div className="border-t border-black/5 bg-white p-4">

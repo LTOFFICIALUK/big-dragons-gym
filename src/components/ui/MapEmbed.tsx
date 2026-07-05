@@ -24,7 +24,6 @@ export const MapEmbed = ({
       allowFullScreen
       loading={priority ? "eager" : "lazy"}
       referrerPolicy="no-referrer-when-downgrade"
-      className="w-full"
     />
   </div>
 );

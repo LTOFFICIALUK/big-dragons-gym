@@ -26,16 +26,11 @@ export const HomeHero = () => {
 
       <div className="container-narrow relative z-10 py-10 md:py-16 lg:py-20">
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-          <HeroLocationMap
-            className="order-first w-full max-w-md lg:order-2 lg:ml-auto"
-            mapHeight={300}
-          />
-
           <motion.div
             initial={shouldReduceMotion ? false : { opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="order-last max-w-xl lg:order-1"
+            className="max-w-xl"
           >
             <span className="mb-5 inline-flex rounded border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-white/90">
               Blaenau Ffestiniog
@@ -57,6 +52,11 @@ export const HomeHero = () => {
               </a>
             </div>
           </motion.div>
+
+          <HeroLocationMap
+            className="w-full max-w-md lg:ml-auto"
+            mapHeight={300}
+          />
         </div>
       </div>
 

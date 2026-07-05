@@ -1,5 +1,6 @@
 import { CTABand } from "@/components/sections/CTABand";
 import { PageHero } from "@/components/sections/PageHero";
+import { RelatedBlogLink } from "@/components/sections/RelatedBlogLink";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
 import { MapEmbed } from "@/components/ui/MapEmbed";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -100,6 +101,11 @@ export default async function LocationPage({ params }: Props) {
             <p className="mt-4 max-w-3xl text-lg leading-relaxed text-brand-black/80">
               {t("parking")}
             </p>
+            <RelatedBlogLink
+              slug="why-big-dragons-gym-24-7-blaenau-ffestiniog"
+              locale={locale}
+              className="mt-8 max-w-3xl"
+            />
           </FadeIn>
 
           <FadeIn className="mt-12 rounded bg-maroon p-8 text-white md:p-10">

@@ -262,7 +262,8 @@
     "h1": "Blog",
     "intro": "Training insights, local fitness tips, and news from Big Dragons Gym.",
     "author": "Big Dragons Gym",
-    "readTime": "{minutes} min read"
+    "readTime": "{minutes} min read",
+    "relatedReading": "Related reading"
   },
   "faq": {
     "metaTitle": "FAQ | Big Dragons Gym",

@@ -16,7 +16,6 @@ const primaryNavItems = [
   { key: "membership", href: "/membership" as const },
   { key: "location", href: "/location" as const },
   { key: "contact", href: "/contact" as const },
-  { key: "blog", href: "/blog" as const },
 ] as const;
 
 const serviceNavItems = [
@@ -170,7 +169,6 @@ export const Header = () => {
     { key: "membership", href: "/membership" as const },
     { key: "location", href: "/location" as const },
     { key: "contact", href: "/contact" as const },
-    { key: "blog", href: "/blog" as const },
   ] as const;
 
   return (
