@@ -43,6 +43,6 @@ export const PageHero = ({
         {children && <div className="mt-8">{children}</div>}
       </FadeIn>
     </div>
-    <SectionTransition fill="white" edge="bottom" size="sm" />
+    <SectionTransition fill="white" size="sm" />
   </section>
 );

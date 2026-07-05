@@ -1,10 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { BUSINESS } from "@/lib/constants";
 import { FadeIn } from "@/components/ui/FadeIn";
-import {
-  SectionTransition,
-  type SectionTransitionFill,
-} from "@/components/ui/SectionTransition";
+import { SectionTransition } from "@/components/ui/SectionTransition";
 
 type CTABandProps = {
   title: string;
@@ -13,8 +10,6 @@ type CTABandProps = {
   primaryHref?: "/contact" | "/personal-training" | "/membership";
   primaryExternalHref?: string;
   secondaryLabel?: string;
-  /** Background colour of the section above — draws the chevron notch into the CTA band. */
-  transitionFrom?: SectionTransitionFill;
 };
 
 export const CTABand = ({
@@ -24,10 +19,9 @@ export const CTABand = ({
   primaryHref = "/contact",
   primaryExternalHref,
   secondaryLabel,
-  transitionFrom = "white",
 }: CTABandProps) => (
   <section className="relative overflow-hidden bg-maroon">
-    <SectionTransition fill={transitionFrom} edge="top" size="md" />
+    <SectionTransition fill="maroon" anchor="lower" size="md" />
     <div
       className="pointer-events-none absolute inset-0 opacity-5"
       style={{

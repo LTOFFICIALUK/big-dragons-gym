@@ -58,7 +58,7 @@ export const USPSection = () => {
             ))}
           </div>
         </div>
-        <SectionTransition fill="white" edge="bottom" size="sm" />
+        <SectionTransition fill="white" size="sm" />
       </section>
 
       <section className="relative section-padding bg-white">

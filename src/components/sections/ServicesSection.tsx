@@ -78,7 +78,7 @@ export const ServicesSection = () => {
           ))}
         </StaggerContainer>
       </div>
-      <SectionTransition fill="gray-100" edge="bottom" size="sm" />
+      <SectionTransition fill="gray-100" size="sm" />
     </section>
   );
 };

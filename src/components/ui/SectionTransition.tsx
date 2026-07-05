@@ -5,7 +5,8 @@ export type SectionTransitionFill = "white" | "gray-100" | "maroon";
 type SectionTransitionProps = {
   /** Background colour of the section below (fills the notch). */
   fill: SectionTransitionFill;
-  edge?: "top" | "bottom";
+  /** `upper` = bottom of the section above (default). `lower` = top of the section below — same chevron direction. */
+  anchor?: "upper" | "lower";
   size?: "sm" | "md" | "lg";
   className?: string;
 };
@@ -24,22 +25,22 @@ const sizeClasses = {
 
 /**
  * Angular chevron notch between two section background colours.
- * Place on the upper section's bottom edge (or lower section's top edge).
+ * Peak always points up into the lighter/upper section.
  */
 export const SectionTransition = ({
   fill,
-  edge = "bottom",
+  anchor = "upper",
   size = "md",
   className,
 }: SectionTransitionProps) => (
   <div
     aria-hidden="true"
     className={cn(
-      "pointer-events-none absolute inset-x-0 z-10 section-notch",
+      "pointer-events-none absolute inset-x-0 z-10 section-notch rotate-180",
       sizeClasses[size],
       fillClasses[fill],
-      edge === "bottom" && "bottom-0 rotate-180",
-      edge === "top" && "top-0",
+      anchor === "upper" && "bottom-0",
+      anchor === "lower" && "top-0",
       className,
     )}
   />
