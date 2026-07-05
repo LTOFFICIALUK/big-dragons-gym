@@ -2,7 +2,6 @@
 
 import { Clock, Dumbbell, MapPin, Users, UtensilsCrossed, type LucideIcon } from "lucide-react";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
-import { SectionTransition } from "@/components/ui/SectionTransition";
 import { useTranslations } from "next-intl";
 
 const uspIcons: LucideIcon[] = [Clock, Dumbbell, UtensilsCrossed, Users, MapPin];
@@ -19,7 +18,7 @@ const UspItem = ({ label, Icon, duplicate = false }: UspItemProps) => (
     className={`flex shrink-0 items-center gap-3 px-4 sm:px-6${duplicate ? " usp-marquee-duplicate" : ""}`}
     aria-hidden={duplicate || undefined}
   >
-    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-black/5">
+    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gray-100 shadow-sm ring-1 ring-black/5">
       <Icon className="h-5 w-5 text-primary-red" strokeWidth={1.75} aria-hidden="true" />
     </div>
     <p className="whitespace-nowrap text-sm font-semibold text-maroon sm:text-base">{label}</p>
@@ -40,7 +39,7 @@ export const USPSection = () => {
   return (
     <>
       <section
-        className="relative border-y border-black/5 bg-gray-100 py-6 md:py-8"
+        className="relative border-b border-black/5 bg-white py-6 md:py-8"
         aria-label={t("uspMarqueeLabel")}
       >
         <div className="usp-marquee usp-marquee-mask overflow-hidden">
@@ -58,7 +57,6 @@ export const USPSection = () => {
             ))}
           </div>
         </div>
-        <SectionTransition fill="white" size="sm" />
       </section>
 
       <section className="relative section-padding bg-white">
