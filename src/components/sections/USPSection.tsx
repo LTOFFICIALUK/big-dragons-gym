@@ -63,7 +63,7 @@ export const USPSection = () => {
       </section>
 
       <section className="relative section-padding bg-white">
-        <SectionTransition fill="white" anchor="lower" size="md" />
+        <SectionTransition fill="gray-100" anchor="lower" size="md" />
         <div className="container-narrow">
           <FadeIn className="text-center">
             <h2 className="font-display text-3xl tracking-wide text-maroon sm:text-4xl md:text-5xl">
