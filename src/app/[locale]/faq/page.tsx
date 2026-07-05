@@ -52,7 +52,7 @@ export default async function FAQPage({ params }: Props) {
         title={t("h1")}
         subtitle={t("intro")}
         primaryLabel={tCta("enquire")}
-        secondaryLabel={tCta("callDei")}
+        secondaryLabel={tCta("callUs")}
       />
     </>
   );

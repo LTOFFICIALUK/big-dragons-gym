@@ -3,6 +3,8 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
 import { MapEmbed } from "@/components/ui/MapEmbed";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { MapDirectionsLight } from "@/components/ui/MapDirections";
+import { getGoogleMapsDirectionsUrl } from "@/lib/maps";
 import { BUSINESS } from "@/lib/constants";
 import { buildBreadcrumbSchema } from "@/lib/schema";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -57,14 +59,11 @@ export default async function LocationPage({ params }: Props) {
               <p className="mt-4 rounded border-l-4 border-primary-red bg-gray-100 p-4 text-sm text-brand-black/70">
                 {t("buildingNote")}
               </p>
-              <a
-                href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${BUSINESS.address.street}, ${BUSINESS.address.locality}, ${BUSINESS.address.postalCode}`)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary mt-6 inline-flex"
-              >
-                {tCta("getDirections")}
-              </a>
+              <MapDirectionsLight
+                className="mt-6"
+                googleLabel={tCta("googleMaps")}
+                appleLabel={tCta("appleMaps")}
+              />
             </FadeIn>
             <FadeIn delay={0.15}>
               <MapEmbed title={`${BUSINESS.name} map`} />
@@ -115,8 +114,8 @@ export default async function LocationPage({ params }: Props) {
         title={t("h1")}
         subtitle={t("intro")}
         primaryLabel={tCta("getDirections")}
-        primaryHref="/contact"
-        secondaryLabel={tCta("callDei")}
+        primaryExternalHref={getGoogleMapsDirectionsUrl()}
+        secondaryLabel={tCta("callUs")}
       />
     </>
   );

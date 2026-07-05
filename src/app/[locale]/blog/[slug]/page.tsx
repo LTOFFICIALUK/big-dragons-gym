@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: Props) {
         title={title}
         subtitle={excerpt}
         primaryLabel={tCta("bookPT")}
-        secondaryLabel={tCta("callDei")}
+        secondaryLabel={tCta("callUs")}
       />
     </>
   );

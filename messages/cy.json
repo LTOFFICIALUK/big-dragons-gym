@@ -26,11 +26,13 @@
   "cta": {
     "bookPT": "Archebu Hyfforddi Personol",
     "bookPTHeader": "Archebu HP",
-    "callDei": "Ffonio Dei",
+    "callUs": "Ffoniwch Ni",
     "whatsapp": "WhatsApp",
     "enquire": "Ymholi",
     "getDirections": "Cyfarwyddiadau",
-    "contactForRates": "Cysylltwch â Dei am brisiau",
+    "googleMaps": "Google Maps",
+    "appleMaps": "Apple Maps",
+    "contactForRates": "Cysylltwch â ni am brisiau",
     "joinNow": "Ymholi am Aelodaeth",
     "readMore": "Darllen mwy",
     "viewAllPosts": "Gweld yr holl bostiadau",
@@ -43,7 +45,7 @@
     "heroSubline": "Hyfforddi personol, cyngor bwyta iach, a mynediad 24 awr — eich campfa leol yng nghanol Llan Ffestiniog.",
     "usps": {
       "open247": "Ar agor 24/7",
-      "ptWithDei": "Hyfforddi personol gyda Dei",
+      "personalTraining": "Hyfforddi personol arbenigol",
       "nutrition": "Cyngor bwyta iach",
       "community": "Campfa gymunedol Gogledd Cymru",
       "location": "Capel Jerwsalem, Stryd Fawr — hawdd ei ddarganfod"
@@ -85,7 +87,27 @@
       }
     },
     "socialTitle": "O Llawr y Campfa",
-    "socialSubtitle": "Dilynwch ein taith ar gyfryngau cymdeithasol am awgrymiadau hyfforddi, uchafbwyntiau aelodau, a diweddariadau gymunedol.",
+    "socialSubtitle": "Uchafbwyntiau hyfforddi a diweddariadau gymunedol gan Big Dragons Gym.",
+    "socialViewPost": "Gweld ar Instagram",
+    "socialFollowInstagram": "Dilyn ar Instagram",
+    "socialFollowFacebook": "Dilyn ar Facebook",
+    "socialPosts": {
+      "post1": {
+        "caption": "Mynediad 24/7 pan fydd ei angen arnoch — hyfforddwch ar eich amser chi yn Llan Ffestiniog.",
+        "alt": "Llawr hyfforddi Big Dragons Gym",
+        "aria": "Gweld post hyfforddi ar Instagram"
+      },
+      "post2": {
+        "caption": "Hyfforddi personol wedi'i deilwra i'ch nodau — o ddechreuwyr i lifters profiadol.",
+        "alt": "Sesiwn hyfforddi personol yn Big Dragons Gym",
+        "aria": "Gweld post hyfforddi personol ar Instagram"
+      },
+      "post3": {
+        "caption": "Offer premium ac amgylchedd cefnogol ar Stryd Fawr.",
+        "alt": "Offer campfa yn Big Dragons Gym",
+        "aria": "Gweld post offer campfa ar Instagram"
+      }
+    },
     "locationTitle": "Dewch i'n Darganfod ar Stryd Fawr",
     "locationNote": "Mae Big Dragons Gym y tu mewn i Gapl Jerwsalem ar 32 Stryd Fawr — busnes ar wahân i Little Dragons Softplay yn yr un adeilad.",
     "finalCtaTitle": "Barod i Hyfforddi?",
@@ -113,8 +135,8 @@
     "metaDescription": "Hyfforddi personol yn Llan Ffestiniog a Gogledd Cymru gyda Dei.",
     "h1": "Hyfforddi Personol yn Llan Ffestiniog",
     "intro": "Gweithiwch un-i-un gyda Dei yn Big Dragons Gym — hyfforddi personol wedi'i ddylunio o amgylch eich nodau, profiad, ac amserlen.",
-    "aboutDeiTitle": "Cyfarfod Dei",
-    "aboutDei": "Dei yw wyneb Big Dragons Gym — hawdd ei gyfarfod, profiadol, ac wedi ymrwymo i'ch helpu i hyfforddi'n g smarter.",
+    "aboutCoachingTitle": "Hyfforddi Arbenigol",
+    "aboutCoaching": "Mae ein hyfforddi personol wedi'i adeiladu o'ch cwmpas chi — hyfforddi hawdd ei gyfarfod, profiadol, gyda'r arweiniad ac atebolrwydd sydd eu hangen arnoch.",
     "includesTitle": "Beth Sy'n Cynhwysedig",
     "includes": {
       "goals": "Gosod nodau a thracio cynnydd",
@@ -209,7 +231,7 @@
     "metaTitle": "Cysylltu â Big Dragons Gym | Llan Ffestiniog",
     "metaDescription": "Cysylltwch â Dei yn Big Dragons Gym. Ffoniwch, WhatsApp, neu anfonwch ymholiad.",
     "h1": "Cysylltu â Ni",
-    "intro": "Cwestiwn am hyfforddi personol, bwyta iach, neu aelodaeth? Bydd Dei yn cysylltu â chi cyn gynted â phosibl.",
+    "whatsappLabel": "Anfonwch neges atom ar WhatsApp",
     "formTitle": "Anfon Ymholiad",
     "form": {
       "name": "Enw Llawn",

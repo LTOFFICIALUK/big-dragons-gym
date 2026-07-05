@@ -337,7 +337,7 @@ export const Header = () => {
               href={`tel:${BUSINESS.phone}`}
               className="btn-secondary text-center"
             >
-              {tCta("callDei")}
+              {tCta("callUs")}
             </a>
           </div>
         </nav>

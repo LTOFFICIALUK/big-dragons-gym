@@ -44,7 +44,7 @@ export default async function HomePage({ params }: Props) {
         title={t("finalCtaTitle")}
         subtitle={t("finalCtaSubtitle")}
         primaryLabel={tCta("bookPT")}
-        secondaryLabel={tCta("callDei")}
+        secondaryLabel={tCta("callUs")}
       />
     </>
   );

@@ -29,7 +29,7 @@ export default async function MembershipPage({ params }: Props) {
 
   return (
     <>
-      <PageHero title={t("h1")} subtitle={t("intro")} image={IMAGES.nightGym} />
+      <PageHero title={t("h1")} subtitle={t("intro")} image={IMAGES.membership} />
 
       <section className="section-padding bg-white">
         <div className="container-narrow max-w-3xl space-y-12">
@@ -83,7 +83,7 @@ export default async function MembershipPage({ params }: Props) {
         title={t("h1")}
         subtitle={t("intro")}
         primaryLabel={tCta("joinNow")}
-        secondaryLabel={tCta("callDei")}
+        secondaryLabel={tCta("callUs")}
       />
     </>
   );

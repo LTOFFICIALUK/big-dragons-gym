@@ -1,7 +1,7 @@
 {
   "metadata": {
     "siteName": "Big Dragons Gym",
-    "defaultDescription": "24/7 fitness in Blaenau Ffestiniog, North Wales. Personal training, nutrition advice, and round-the-clock gym access with Dei."
+    "defaultDescription": "24/7 fitness in Blaenau Ffestiniog. Personal training, nutrition advice, and round-the-clock gym access."
   },
   "nav": {
     "home": "Home",
@@ -26,26 +26,28 @@
   "cta": {
     "bookPT": "Book Personal Training",
     "bookPTHeader": "Book PT",
-    "callDei": "Call Dei",
+    "callUs": "Call Us",
     "whatsapp": "WhatsApp",
     "enquire": "Enquire",
     "getDirections": "Get Directions",
-    "contactForRates": "Contact Dei for rates",
+    "googleMaps": "Google Maps",
+    "appleMaps": "Apple Maps",
+    "contactForRates": "Contact us for rates",
     "joinNow": "Enquire About Membership",
     "readMore": "Read more",
     "viewAllPosts": "View all posts",
     "sendEnquiry": "Send Enquiry"
   },
   "home": {
-    "metaTitle": "Big Dragons Gym — 24/7 Fitness in Blaenau Ffestiniog, North Wales",
-    "metaDescription": "Personal training, nutrition advice, and 24/7 gym access in Blaenau Ffestiniog. Train on your schedule at North Wales' premium community gym.",
-    "h1": "Big Dragons Gym — 24/7 Fitness in Blaenau Ffestiniog, North Wales",
+    "metaTitle": "Big Dragons Gym — 24/7 Fitness in Blaenau Ffestiniog",
+    "metaDescription": "Personal training, nutrition advice, and 24/7 gym access in Blaenau Ffestiniog. Train on your schedule at your local premium gym.",
+    "h1": "Big Dragons Gym — 24/7 Fitness in Blaenau Ffestiniog",
     "heroSubline": "Personal training, nutrition advice, and round-the-clock access — your local gym in the heart of Blaenau Ffestiniog.",
     "usps": {
       "open247": "Open 24/7",
-      "ptWithDei": "Personal training with Dei",
+      "personalTraining": "Expert personal training",
       "nutrition": "Nutrition guidance",
-      "community": "North Wales community gym",
+      "community": "Local community gym",
       "location": "Jerusalem Chapel, High Street — easy to find"
     },
     "servicesTitle": "Training Built Around You",
@@ -53,7 +55,7 @@
     "services": {
       "pt": {
         "title": "Personal Training",
-        "description": "One-to-one coaching with Dei — goal setting, programme design, and form coaching for every level."
+        "description": "One-to-one coaching — goal setting, programme design, and form coaching for every level."
       },
       "nutrition": {
         "title": "Nutrition Advice",
@@ -85,11 +87,31 @@
       }
     },
     "socialTitle": "From the Gym Floor",
-    "socialSubtitle": "Follow our journey on social media for training tips, member highlights, and community updates.",
+    "socialSubtitle": "Training highlights and community updates from Big Dragons Gym.",
+    "socialViewPost": "View on Instagram",
+    "socialFollowInstagram": "Follow on Instagram",
+    "socialFollowFacebook": "Follow on Facebook",
+    "socialPosts": {
+      "post1": {
+        "caption": "24/7 access when you need it — train on your schedule in Blaenau Ffestiniog.",
+        "alt": "Big Dragons Gym training floor",
+        "aria": "View gym training post on Instagram"
+      },
+      "post2": {
+        "caption": "Personal training tailored to your goals — from beginners to experienced lifters.",
+        "alt": "Personal training session at Big Dragons Gym",
+        "aria": "View personal training post on Instagram"
+      },
+      "post3": {
+        "caption": "Premium equipment and a supportive environment on High Street.",
+        "alt": "Gym equipment at Big Dragons Gym",
+        "aria": "View gym equipment post on Instagram"
+      }
+    },
     "locationTitle": "Find Us on High Street",
     "locationNote": "Big Dragons Gym is inside Jerusalem Chapel at 32 High Street — a separate business from Little Dragons Softplay in the same building.",
     "finalCtaTitle": "Ready to Train?",
-    "finalCtaSubtitle": "Get in touch with Dei today — personal training, nutrition advice, or 24/7 membership enquiries welcome."
+    "finalCtaSubtitle": "Get in touch today — personal training, nutrition advice, or 24/7 membership enquiries welcome."
   },
   "about": {
     "metaTitle": "About Big Dragons Gym | Blaenau Ffestiniog",
@@ -103,18 +125,18 @@
     "valuesTitle": "What We Stand For",
     "values": {
       "access": "24/7 access — train on your schedule",
-      "coaching": "Expert personal training with Dei",
+      "coaching": "Expert personal training on-site",
       "community": "A welcoming North Wales training community",
       "quality": "Premium equipment in a clean, professional environment"
     }
   },
   "personalTraining": {
     "metaTitle": "Personal Trainer Blaenau Ffestiniog | Big Dragons Gym",
-    "metaDescription": "Personal training in Blaenau Ffestiniog and North Wales with Dei. Goal setting, programme design, and form coaching for all levels.",
+    "metaDescription": "Personal training in Blaenau Ffestiniog. Goal setting, programme design, and form coaching for all levels.",
     "h1": "Personal Training in Blaenau Ffestiniog",
-    "intro": "Work one-to-one with Dei at Big Dragons Gym — personalised coaching designed around your goals, experience, and schedule.",
-    "aboutDeiTitle": "Meet Dei",
-    "aboutDei": "Dei is the face of Big Dragons Gym — approachable, experienced, and committed to helping you train smarter. Whether you're new to the gym or looking to break through a plateau, Dei provides the guidance and accountability you need.",
+    "intro": "Work one-to-one with an experienced coach at Big Dragons Gym — personalised training designed around your goals, experience, and schedule.",
+    "aboutCoachingTitle": "Expert Coaching",
+    "aboutCoaching": "Our personal training is built around you — approachable, experienced coaching with the guidance and accountability you need. Whether you're new to the gym or breaking through a plateau, sessions are tailored to your level.",
     "includesTitle": "What's Included",
     "includes": {
       "goals": "Goal setting and progress tracking",
@@ -125,13 +147,13 @@
     },
     "forWhoTitle": "Who It's For",
     "forWho": "Complete beginners building confidence. Experienced lifters chasing new PRs. Anyone who wants expert guidance in a premium, no-nonsense environment.",
-    "pricingNote": "Rates vary depending on session frequency and goals. Contact Dei for a personalised quote — no pressure, just honest advice.",
+    "pricingNote": "Rates vary depending on session frequency and goals. Contact us for a personalised quote — no pressure, just honest advice.",
     "faqTitle": "Personal Training FAQ",
     "faqs": {
       "q1": "Do I need experience to start personal training?",
-      "a1": "Not at all. Dei works with complete beginners through to experienced lifters. Sessions are tailored to your level.",
+      "a1": "Not at all. Our coaches work with complete beginners through to experienced lifters. Sessions are tailored to your level.",
       "q2": "How long are sessions?",
-      "a2": "Session length depends on your programme. Contact Dei to discuss what works best for your goals and schedule.",
+      "a2": "Session length depends on your programme. Contact us to discuss what works best for your goals and schedule.",
       "q3": "Can I combine PT with 24/7 membership?",
       "a3": "Yes. Many members combine personal training sessions with independent 24/7 gym access for the best of both worlds.",
       "q4": "Where does training take place?",
@@ -153,7 +175,7 @@
       "support": "Ongoing support alongside your gym programme"
     },
     "disclaimer": "Our nutrition guidance is for general fitness purposes only and is not a substitute for medical or dietary professional advice.",
-    "linkPT": "Nutrition coaching works best alongside personal training. Ask Dei about combined packages."
+    "linkPT": "Nutrition coaching works best alongside personal training. Ask us about combined packages."
   },
   "membership": {
     "metaTitle": "24 Hour Gym Blaenau Ffestiniog | Big Dragons Gym",
@@ -170,7 +192,7 @@
       "community": "Supportive North Wales gym community"
     },
     "howToJoinTitle": "How to Join",
-    "howToJoin": "Contact Dei to discuss membership options and get set up. We'll walk you through access instructions and answer any questions.",
+    "howToJoin": "Contact us to discuss membership options and get set up. We'll walk you through access instructions and answer any questions.",
     "safetyTitle": "Access & Safety",
     "safety": "Members receive clear access instructions upon joining. The facility is monitored and maintained to a high standard for safe training at any hour."
   },
@@ -207,9 +229,10 @@
   },
   "contact": {
     "metaTitle": "Contact Big Dragons Gym | Blaenau Ffestiniog",
-    "metaDescription": "Contact Dei at Big Dragons Gym. Call, WhatsApp, or send an enquiry about personal training, nutrition, or 24/7 membership.",
+    "metaDescription": "Contact us at Big Dragons Gym. Call, WhatsApp, or send an enquiry about personal training, nutrition, or 24/7 membership.",
     "h1": "Contact Us",
-    "intro": "Have a question about personal training, nutrition, or membership? Dei will get back to you as soon as possible.",
+    "intro": "Have a question about personal training, nutrition, or membership? We'll get back to you as soon as possible.",
+    "whatsappLabel": "Message us on WhatsApp",
     "formTitle": "Send an Enquiry",
     "form": {
       "name": "Full Name",
@@ -225,18 +248,18 @@
         "membership": "Membership",
         "general": "General Enquiry"
       },
-      "success": "Thank you — your enquiry has been sent. Dei will be in touch soon. You can also call directly on +44 7940 125381.",
-      "error": "Something went wrong. Please try again or call Dei directly."
+      "success": "Thank you — your enquiry has been sent. We'll be in touch soon. You can also call directly on +44 7940 125381.",
+      "error": "Something went wrong. Please try again or call us directly."
     },
     "directTitle": "Prefer to Talk?",
-    "directSubtitle": "Call or message Dei directly — we're here to help."
+    "directSubtitle": "Call or message us directly — we're here to help."
   },
   "blog": {
     "metaTitle": "Blog | Big Dragons Gym North Wales",
     "metaDescription": "Training tips, local fitness insights, and gym news from Big Dragons Gym in Blaenau Ffestiniog.",
     "h1": "Blog",
     "intro": "Training insights, local fitness tips, and news from Big Dragons Gym.",
-    "author": "Dei · Big Dragons Gym",
+    "author": "Big Dragons Gym",
     "readTime": "{minutes} min read"
   },
   "faq": {
@@ -250,9 +273,9 @@
       "q2": "Is this the same as Little Dragons Softplay?",
       "a2": "No. Big Dragons Gym and Little Dragons Softplay share the Jerusalem Chapel building at 32 High Street, but they are completely separate businesses with different entrances.",
       "q3": "Do you offer personal training?",
-      "a3": "Yes. Dei offers one-to-one personal training for all levels. Contact us to discuss your goals.",
+      "a3": "Yes. We offer one-to-one personal training for all levels. Contact us to discuss your goals.",
       "q4": "How do I join?",
-      "a4": "Contact Dei by phone, WhatsApp, or the enquiry form on our website. We'll discuss membership options and get you set up.",
+      "a4": "Contact us by phone, WhatsApp, or the enquiry form on our website. We'll discuss membership options and get you set up.",
       "q5": "Where are you located?",
       "a5": "Jerusalem Chapel, 32 High Street, Blaenau Ffestiniog, LL41 3AL — in the town centre on High Street.",
       "q6": "Do you offer nutrition advice?",
@@ -262,7 +285,7 @@
   "privacy": {
     "metaTitle": "Privacy Policy | Big Dragons Gym",
     "h1": "Privacy Policy",
-    "content": "Big Dragons Gym respects your privacy. We collect only the information you provide through our contact form (name, phone, email, and message) to respond to your enquiry. We do not sell or share your data with third parties. Data is stored securely and retained only as long as necessary to fulfil your enquiry. For questions, contact Dei at +44 7940 125381."
+    "content": "Big Dragons Gym respects your privacy. We collect only the information you provide through our contact form (name, phone, email, and message) to respond to your enquiry. We do not sell or share your data with third parties. Data is stored securely and retained only as long as necessary to fulfil your enquiry. For questions, contact us at +44 7940 125381."
   },
   "cookies": {
     "metaTitle": "Cookie Policy | Big Dragons Gym",
@@ -272,7 +295,6 @@
   "footer": {
     "tagline": "24/7 Fitness in Blaenau Ffestiniog",
     "open247": "Open 24/7",
-    "callDei": "Call Dei",
     "quickLinks": "Quick Links",
     "legal": "Legal",
     "privacy": "Privacy",

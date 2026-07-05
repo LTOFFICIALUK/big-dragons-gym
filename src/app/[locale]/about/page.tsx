@@ -69,7 +69,7 @@ export default async function AboutPage({ params }: Props) {
         title={t("h1")}
         subtitle={t("intro")}
         primaryLabel={tCta("bookPT")}
-        secondaryLabel={tCta("callDei")}
+        secondaryLabel={tCta("callUs")}
       />
     </>
   );

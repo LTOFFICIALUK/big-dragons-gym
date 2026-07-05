@@ -65,10 +65,10 @@ export default async function PersonalTrainingPage({ params }: Props) {
         <div className="container-narrow grid gap-16 lg:grid-cols-2">
           <FadeIn>
             <h2 className="font-display text-3xl tracking-wide text-maroon">
-              {t("aboutDeiTitle")}
+              {t("aboutCoachingTitle")}
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-brand-black/80">
-              {t("aboutDei")}
+              {t("aboutCoaching")}
             </p>
             <h2 className="mt-10 font-display text-3xl tracking-wide text-maroon">
               {t("forWhoTitle")}
@@ -120,7 +120,7 @@ export default async function PersonalTrainingPage({ params }: Props) {
         title={t("h1")}
         subtitle={t("intro")}
         primaryLabel={tCta("bookPT")}
-        secondaryLabel={tCta("callDei")}
+        secondaryLabel={tCta("callUs")}
       />
     </>
   );

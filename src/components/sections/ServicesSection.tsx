@@ -18,7 +18,7 @@ const serviceConfig = [
   {
     key: "membership" as const,
     href: "/membership" as const,
-    image: IMAGES.nightGym,
+    image: IMAGES.membership,
   },
 ];
 
