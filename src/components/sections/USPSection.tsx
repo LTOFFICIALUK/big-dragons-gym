@@ -43,7 +43,7 @@ export const USPSection = () => {
         className="relative bg-white pb-8 pt-10 md:pb-10 md:pt-12"
         aria-label={t("uspMarqueeLabel")}
       >
-        <SectionTransition fill="gray-100" anchor="lower" size="md" />
+        <SectionTransition fill="white" anchor="lower" size="md" />
         <div className="usp-marquee usp-marquee-mask overflow-hidden">
           <div className="usp-marquee-track items-center py-2">
             {usps.map((usp) => (
@@ -59,7 +59,7 @@ export const USPSection = () => {
             ))}
           </div>
         </div>
-        <SectionTransition fill="gray-100" anchor="upper" size="md" />
+        <SectionTransition fill="white" anchor="upper" size="md" />
       </section>
 
       <section className="relative section-padding bg-white">

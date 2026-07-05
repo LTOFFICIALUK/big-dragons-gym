@@ -88,28 +88,10 @@
         "description": "Early mornings, late nights, shift workers — train on your schedule, 24/7."
       }
     },
-    "socialTitle": "From the Gym Floor",
-    "socialSubtitle": "Training highlights and community updates from Big Dragons Gym.",
-    "socialViewPost": "View on Instagram",
+    "socialTitle": "Follow Us",
+    "socialSubtitle": "Training updates, gym news, and community — find us on social.",
     "socialFollowInstagram": "Follow on Instagram",
     "socialFollowFacebook": "Follow on Facebook",
-    "socialPosts": {
-      "post1": {
-        "caption": "24/7 access when you need it — train on your schedule in Blaenau Ffestiniog.",
-        "alt": "Big Dragons Gym training floor",
-        "aria": "View gym training post on Instagram"
-      },
-      "post2": {
-        "caption": "Personal training tailored to your goals — from beginners to experienced lifters.",
-        "alt": "Personal training session at Big Dragons Gym",
-        "aria": "View personal training post on Instagram"
-      },
-      "post3": {
-        "caption": "Premium equipment and a supportive environment on High Street.",
-        "alt": "Gym equipment at Big Dragons Gym",
-        "aria": "View gym equipment post on Instagram"
-      }
-    },
     "locationTitle": "Find Us on High Street",
     "locationNote": "Big Dragons Gym is inside Jerusalem Chapel at 32 High Street — a separate business from Little Dragons Softplay in the same building.",
     "finalCtaTitle": "Ready to Train?",

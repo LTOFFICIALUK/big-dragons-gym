@@ -87,28 +87,10 @@
         "description": "Bore cynnar, nos hwyr, gweithwyr shifft — hyfforddwch ar eich amser chi, 24/7."
       }
     },
-    "socialTitle": "O Llawr y Campfa",
-    "socialSubtitle": "Uchafbwyntiau hyfforddi a diweddariadau gymunedol gan Big Dragons Gym.",
-    "socialViewPost": "Gweld ar Instagram",
+    "socialTitle": "Dilynwch Ni",
+    "socialSubtitle": "Diweddariadau hyfforddi a newyddion campfa — dewch o hyd i ni ar y cyfryngau cymdeithasol.",
     "socialFollowInstagram": "Dilyn ar Instagram",
     "socialFollowFacebook": "Dilyn ar Facebook",
-    "socialPosts": {
-      "post1": {
-        "caption": "Mynediad 24/7 pan fydd ei angen arnoch — hyfforddwch ar eich amser chi yn Llan Ffestiniog.",
-        "alt": "Llawr hyfforddi Big Dragons Gym",
-        "aria": "Gweld post hyfforddi ar Instagram"
-      },
-      "post2": {
-        "caption": "Hyfforddi personol wedi'i deilwra i'ch nodau — o ddechreuwyr i lifters profiadol.",
-        "alt": "Sesiwn hyfforddi personol yn Big Dragons Gym",
-        "aria": "Gweld post hyfforddi personol ar Instagram"
-      },
-      "post3": {
-        "caption": "Offer premium ac amgylchedd cefnogol ar Stryd Fawr.",
-        "alt": "Offer campfa yn Big Dragons Gym",
-        "aria": "Gweld post offer campfa ar Instagram"
-      }
-    },
     "locationTitle": "Dewch i'n Darganfod ar Stryd Fawr",
     "locationNote": "Mae Big Dragons Gym y tu mewn i Gapl Jerwsalem ar 32 Stryd Fawr — busnes ar wahân i Little Dragons Softplay yn yr un adeilad.",
     "finalCtaTitle": "Barod i Hyfforddi?",

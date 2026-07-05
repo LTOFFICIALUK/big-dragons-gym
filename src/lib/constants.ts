@@ -32,27 +32,6 @@ export const IMAGES = {
   brand: "/media/gym-brand.jpg",
 } as const;
 
-export const SOCIAL_POSTS = [
-  {
-    id: "post-1",
-    image: "/media/gym-hero.jpg",
-    captionKey: "post1" as const,
-    href: "https://www.instagram.com/big_dragon_gym/",
-  },
-  {
-    id: "post-2",
-    image: "/media/pt-coaching.jpg",
-    captionKey: "post2" as const,
-    href: "https://www.instagram.com/big_dragon_gym/",
-  },
-  {
-    id: "post-3",
-    image: "/media/gym-floor.jpg",
-    captionKey: "post3" as const,
-    href: "https://www.instagram.com/big_dragon_gym/",
-  },
-] as const;
-
 /** Developer credit — required on every client site footer (Benza pattern). */
 export const BUILT_BY = {
   name: "Luke Carter",
