@@ -6,8 +6,13 @@ export const buildGymSchema = () => ({
   "@type": ["ExerciseGym", "LocalBusiness"],
   name: BUSINESS.name,
   description:
-    "24/7 gym, personal training, and nutrition advice in Blaenau Ffestiniog, Gwynedd. Premium fitness centre on High Street, LL41 3AL.",
-  image: [`${SITE_URL}${IMAGES.hero}`, `${SITE_URL}${IMAGES.logo}`],
+    "24/7 gym with free weights, resistance machines, cardio, cable stations, and a boxing area in Blaenau Ffestiniog, Gwynedd. Personal training and nutrition advice on High Street, LL41 3AL.",
+  image: [
+    `${SITE_URL}${IMAGES.hero}`,
+    `${SITE_URL}${IMAGES.gymFloor}`,
+    `${SITE_URL}${IMAGES.personalTraining}`,
+    `${SITE_URL}${IMAGES.logo}`,
+  ],
   telephone: BUSINESS.phone,
   address: {
     "@type": "PostalAddress",

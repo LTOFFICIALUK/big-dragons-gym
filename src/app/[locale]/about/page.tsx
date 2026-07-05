@@ -1,4 +1,4 @@
-import { CTABand } from "@/components/sections/CTABand";
+import { FacilitiesSection } from "@/components/sections/FacilitiesSection";
 import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { IMAGES } from "@/lib/constants";
@@ -25,7 +25,6 @@ export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "about" });
-  const tCta = await getTranslations({ locale, namespace: "cta" });
 
   const values = ["access", "coaching", "community", "quality"] as const;
 
@@ -68,12 +67,7 @@ export default async function AboutPage({ params }: Props) {
           </FadeIn>
         </div>
       </section>
-      <CTABand
-        title={t("h1")}
-        subtitle={t("intro")}
-        primaryLabel={tCta("bookPT")}
-        secondaryLabel={tCta("callUs")}
-      />
+      <FacilitiesSection />
     </>
   );
 }

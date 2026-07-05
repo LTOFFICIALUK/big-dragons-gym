@@ -64,7 +64,7 @@
       },
       "membership": {
         "title": "Aelodaeth 24/7",
-        "description": "Hyfforddwch pryd bynnag sy'n addas i chi. Mynediad campfa llawn 24 awr y dydd yng nghanol Llan Ffestiniog."
+        "description": "Hyfforddwch pryd bynnag sy'n addas i chi. Mynediad campfa llawn o £30/y mis yng nghanol Llan Ffestiniog."
       }
     },
     "whyTitle": "Pam Big Dragons Gym",
@@ -100,7 +100,7 @@
     "metaTitle": "Amdanom Big Dragons Gym | Llan Ffestiniog",
     "metaDescription": "Dysgwch am Big Dragons Gym — cyfleuster campfa 24/7 premium yn Llan Ffestiniog, Gogledd Cymru.",
     "h1": "Amdanom Big Dragons Gym",
-    "intro": "Mae Big Dragons Gym yn gyfleuster campfa 24/7 yng nghanol Llan Ffestiniog, Gogledd Cymru. Campfa perchnogol lleol gydag amgylchedd hyfforddi premium — wedi'i hadeiladu ar gyfer pobl sy'n cymryd eu hyfforddiant o ddifrif.",
+    "intro": "Mae Big Dragons Gym yn gyfleuster campfa 24/7 yng nghanol Llan Ffestiniog, Gogledd Cymru. Campfa perchnogol lleol gydag amgylchedd hyfforddi premium — pwysau rhydd, peiriannau gwrthiant, cardio, gorsafau cable, ac ardal boxio o dan un to.",
     "missionTitle": "Ein Cenhadaeth",
     "mission": "Darparu mynediad di-derfyn i gyfleusterau hyfforddi o safon a hyfforddi arbenigol mewn amgylchedd cefnogol, gyrru gan y gymuned.",
     "distinctTitle": "Campfa, Nid Softplay",
@@ -110,7 +110,7 @@
       "access": "Mynediad 24/7 — hyfforddwch ar eich amser chi",
       "coaching": "Hyfforddi personol arbenigol gyda Dei",
       "community": "Gymuned hyfforddi Gogledd Cymru croesawgar",
-      "quality": "Offer premium mewn amgylchedd glân, proffesiynol"
+      "quality": "Pwysau rhydd, peiriannau, cardio, cable, a boxio — i gyd mewn gofod glân, proffesiynol"
     }
   },
   "personalTraining": {
@@ -170,21 +170,44 @@
     }
   },
   "membership": {
-    "metaTitle": "Campfa 24 Awr Llan Ffestiniog | Big Dragons Gym",
-    "metaDescription": "Ymunwch â Big Dragons Gym am fynediad amser o'r dydd yn Llan Ffestiniog.",
+    "metaTitle": "Aelodaeth Campfa o £30/y mis | Big Dragons Gym Llan Ffestiniog",
+    "metaDescription": "Aelodaeth Big Dragons Gym o £15/y wythnos neu £30/y mis. Mynediad campfa 24/7 yn Llan Ffestiniog — cardiau stamp plant ar gael.",
     "h1": "Aelodaeth Campfa",
-    "intro": "Mae'r rhan fwyaf o gemau yn cau'n gynnar. Nid yw Big Dragons Gym. Hyfforddwch ar eich amser chi — unrhyw bryd, dydd neu nos.",
+    "intro": "Mae'r rhan fwyaf o gemau yn cau'n gynnar. Nid yw Big Dragons Gym. Hyfforddwch ar eich amser chi — unrhyw bryd, dydd neu nos — gyda phrisiau syml.",
+    "pricing": {
+      "title": "Prisiau Aelodaeth",
+      "subtitle": "Cyfraddau syml ar gyfer mynediad campfa llawn — dim ffioedd cudd.",
+      "featuredLabel": "Mwyaf poblogaidd",
+      "dealsNote": "Anfonwch neges atom am ddelau a chynigion cyfredol — gall prisiau amrywio gyda hyrwyddiadau.",
+      "plans": {
+        "monthly": {
+          "name": "Aelodaeth Campfa Fisol",
+          "period": "y mis",
+          "description": "Mynediad 24/7 llawn i bwysau rhydd, peiriannau, cardio, cable, ac ardal boxio."
+        },
+        "weekly": {
+          "name": "Aelodaeth Wythnosol",
+          "period": "y wythnos",
+          "description": "Mynediad tymor byr hyblyg — ideal os ydych chi'n trio'r gampfa neu'n ymweld â'r ardal."
+        },
+        "kidsStamp": {
+          "name": "Card Stamp Plant",
+          "period": "10 sesiwn",
+          "description": "Card stamp ar gyfer 10 sesiwn campfa — plant yn unig. Gofynnwch am arweiniad oedran pan fyddwch chi'n ymholi."
+        }
+      }
+    },
     "uspTitle": "Hyfforddwch ar Eich Amser Chi",
     "usp": "Gweithwyr shifft, rhai sy'n codi'n gynnar, hwylfawr nos — nid yw bywyd yn ffitio amserlen campfa 9-i-5.",
     "includesTitle": "Beth Sy'n Cynhwysedig",
     "includes": {
       "access": "Mynediad campfa unrhyw bryd, dydd neu nos",
-      "equipment": "Offer rhydd premium a chyfarpar hyfforddi",
+      "equipment": "Pwysau rhydd, peiriannau gwrthiant, gorsafau cable, cyfarpar cardio, ac ardal boxio",
       "facility": "Amgylchedd hyfforddi glân, proffesiynol",
       "community": "Gymuned campfa leol gefnogol"
     },
     "howToJoinTitle": "Sut i Ymuno",
-    "howToJoin": "Cysylltwch â ni i drafod opsiynau aelodaeth a chael eich sefydlu.",
+    "howToJoin": "Dewiswch y cynllun sy'n addas i chi a chysylltwch â ni i gael eich sefydlu. Byddwn yn eich tywys drwy gyfarwyddiadau mynediad ac yn ateb unrhyw gwestiynau.",
     "safetyTitle": "Mynediad a Diogelwch",
     "safety": "Mae aelodau yn derbyn cyfarwyddiadau mynediad clir wrth ymuno. Mae'r cyfleuster yn cael ei fonitro a'i gynnal i safon uchel.",
     "ctaTitle": "Barod i ymuno?",
@@ -270,11 +293,13 @@
       "q3": "A ydych chi'n cynnig hyfforddi personol?",
       "a3": "Ydyn. Rydym yn cynnig hyfforddi personol un-i-un ar gyfer pob lefel.",
       "q4": "Sut ydw i'n ymuno?",
-      "a4": "Cysylltwch â ni dros y ffôn, WhatsApp, neu'r ffurflen ymholi ar ein gwefan.",
+      "a4": "Cysylltwch â ni dros y ffôn, WhatsApp, neu'r ffurflen ymholi ar ein gwefan. Aelodaeth fisol yw £30, wythnosol yw £15, a chardiau stamp plant (10 sesiwn) yw £20 — byddwn yn eich sefydlu gyda mynediad.",
       "q5": "Ble rydych chi wedi'ch lleoli?",
       "a5": "Capel Jerwsalem, 32 Stryd Fawr, Llan Ffestiniog, LL41 3AL — yng nghanol y dref ar Stryd Fawr.",
       "q6": "A ydych chi'n cynnig cyngor bwyta iach?",
-      "a6": "Ydyn. Rydym yn cynnig cyngor bwyta iach ymarferol a hyfforddi arferion i gefnogi eich nodau hyfforddi."
+      "a6": "Ydyn. Rydym yn cynnig cyngor bwyta iach ymarferol a hyfforddi arferion i gefnogi eich nodau hyfforddi.",
+      "q7": "Pa gyfarpar sydd ar gael?",
+      "a7": "Mae aelodau yn cael mynediad at bwysau rhydd, rackiau dumbbell, peiriannau gwrthiant, gorsafau cable, cyfarpar cardio, ac ardal boxio gyda bagiau trwm — i gyd wedi'u cynnwys yn yr aelodaeth."
     }
   },
   "areas": {
@@ -331,6 +356,57 @@
         "directions": "Dilynwch yr A5 i Betws-y-Coed yna'r A470 tuag at Llan Ffestiniog. Dewch o hyd i ni yn Gapl Jerwsalem, 32 Stryd Fawr, LL41 3AL.",
         "ctaTitle": "Hyfforddiant Campfa Eryri",
         "ctaSubtitle": "Cysylltwch â Big Dragons Gym am aelodaeth a hyfforddi."
+      }
+    }
+  },
+  "facilities": {
+    "title": "Tu Mewn Big Dragons Gym",
+    "subtitle": "Llawr hyfforddi llawn gwasanaeth — cryfder, cardio, cable, a boxio — yng nghanol Llan Ffestiniog.",
+    "gallery": {
+      "overview": {
+        "title": "Llawr Hyfforddi Llawn",
+        "description": "Cardio, pwysau rhydd, peiriant Smith, a gorsafau cable mewn un gofod agored.",
+        "alt": "Golwg eang o lawr hyfforddi Big Dragons Gym gyda cardio a phwysau rhydd"
+      },
+      "freeWeights": {
+        "title": "Pwysau Rhydd a Rackiau Pwer",
+        "description": "Barbellau, meinciau, a rackiau squat ar gyfer codi cyfansawdd — gyda balchder Gogledd Cymru ar ddisgleirdeb.",
+        "alt": "Ardal pwysau rhydd gyda baner Gymraeg a meinc wasgu yn Big Dragons Gym"
+      },
+      "dumbbells": {
+        "title": "Parth Dumbbell",
+        "description": "Rackiau dumbbell eang a meinciau addasadwy ar gyfer gwaith corff uchaf ac ynysu.",
+        "alt": "Rackiau dumbbell a meinciau pwysau yn Big Dragons Gym"
+      },
+      "strength": {
+        "title": "Gorsafau Cryfder",
+        "description": "Wasgu coesau, meinc wasgu, a chyfarpar wedi'i lwytho ar gyfer hyfforddi cryfder difrifol.",
+        "alt": "Gorsafau wasgu coesau a meinc wasgu yn Big Dragons Gym"
+      },
+      "machines": {
+        "title": "Peiriannau Gwrthiant",
+        "description": "Peiriannau wedi'u lwytho a dewis ar gyfer y frest, y coesau, a gwaith corff llawn.",
+        "alt": "Peiriannau gwrthiant gan gynnwys wasgu y frest yn Big Dragons Gym"
+      },
+      "cables": {
+        "title": "Ardal Cable a Ffwncsiynol",
+        "description": "Cable crossover a hyfforddwyr ffwncsiynol ar gyfer gwaith gwthio, tynnu, a chraidd amrywiol.",
+        "alt": "Peiriannau cable ac mewnfyd y gampfa yn Big Dragons Gym"
+      },
+      "boxing": {
+        "title": "Ardal Boxio",
+        "description": "Bagiau trwm a llawr wedi'i badi ar gyfer boxio, gwaith bag, a chyflwr combat.",
+        "alt": "Bagiau trwm boxio ar batiau coch yn Big Dragons Gym"
+      },
+      "reception": {
+        "title": "Derbynfa a Desg Croeso",
+        "description": "Derbynfa brandiedig gyda check-in aelodau — eich stop cyntaf pan fyddwch chi'n cyrraedd.",
+        "alt": "Desg dderbyn Big Dragons Gym gyda'r logo"
+      },
+      "welcome": {
+        "title": "Mynediad Aelodau",
+        "description": "Camwch o'r dderbynfa yn syth i'r llawr hyfforddi — 24/7 i aelodau.",
+        "alt": "Golwg o'r dderbynfa ar draws llawr hyfforddi Big Dragons Gym"
       }
     }
   },

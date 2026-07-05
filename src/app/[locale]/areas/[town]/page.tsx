@@ -1,4 +1,3 @@
-import { CTABand } from "@/components/sections/CTABand";
 import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -121,14 +120,6 @@ export default async function AreaPage({ params }: Props) {
           </FadeIn>
         </div>
       </section>
-
-      <CTABand
-        title={t(`towns.${town}.ctaTitle`)}
-        subtitle={t(`towns.${town}.ctaSubtitle`)}
-        primaryLabel={tCta("bookPT")}
-        secondaryLabel={tCta("callUs")}
-        contactInterest="pt"
-      />
     </>
   );
 }

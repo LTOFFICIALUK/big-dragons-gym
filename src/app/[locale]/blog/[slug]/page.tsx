@@ -1,4 +1,3 @@
-import { CTABand } from "@/components/sections/CTABand";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Link } from "@/i18n/navigation";
@@ -118,14 +117,6 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </div>
       </article>
-
-      <CTABand
-        title={title}
-        subtitle={excerpt}
-        primaryLabel={tCta("bookPT")}
-        secondaryLabel={tCta("callUs")}
-        contactInterest="pt"
-      />
     </>
   );
 }

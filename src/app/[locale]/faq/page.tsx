@@ -1,4 +1,3 @@
-import { CTABand } from "@/components/sections/CTABand";
 import { PageHero } from "@/components/sections/PageHero";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { FadeIn } from "@/components/ui/FadeIn";
@@ -27,7 +26,6 @@ export default async function FAQPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "faq" });
-  const tCta = await getTranslations({ locale, namespace: "cta" });
 
   const faqs = [
     { question: t("items.q1"), answer: t("items.a1") },
@@ -36,6 +34,7 @@ export default async function FAQPage({ params }: Props) {
     { question: t("items.q4"), answer: t("items.a4") },
     { question: t("items.q5"), answer: t("items.a5") },
     { question: t("items.q6"), answer: t("items.a6") },
+    { question: t("items.q7"), answer: t("items.a7") },
   ];
 
   return (
@@ -50,13 +49,6 @@ export default async function FAQPage({ params }: Props) {
           </FadeIn>
         </div>
       </section>
-
-      <CTABand
-        title={t("h1")}
-        subtitle={t("intro")}
-        primaryLabel={tCta("enquire")}
-        secondaryLabel={tCta("callUs")}
-      />
     </>
   );
 }

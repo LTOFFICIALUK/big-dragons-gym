@@ -65,7 +65,7 @@
       },
       "membership": {
         "title": "24/7 Membership",
-        "description": "Train whenever suits you. Full gym access around the clock in the heart of Blaenau Ffestiniog."
+        "description": "Train whenever suits you. Full gym access from £30/month in the heart of Blaenau Ffestiniog."
       }
     },
     "whyTitle": "Why Big Dragons Gym",
@@ -101,7 +101,7 @@
     "metaTitle": "About Big Dragons Gym | Blaenau Ffestiniog",
     "metaDescription": "Learn about Big Dragons Gym — a premium 24/7 fitness facility in Blaenau Ffestiniog, North Wales, serving the local community with expert training.",
     "h1": "About Big Dragons Gym",
-    "intro": "Big Dragons Gym is a 24/7 fitness facility in the heart of Blaenau Ffestiniog, North Wales. We're a locally owned gym with a premium training environment — built for people who take their training seriously.",
+    "intro": "Big Dragons Gym is a 24/7 fitness facility in the heart of Blaenau Ffestiniog, North Wales. We're a locally owned gym with a premium training environment — free weights, resistance machines, cardio, cable stations, and a dedicated boxing area under one roof.",
     "missionTitle": "Our Mission",
     "mission": "To provide unrestricted access to quality training facilities and expert coaching in a supportive, community-driven environment. Whether you're picking up your first barbell or chasing a new personal best, Big Dragons Gym is your home.",
     "distinctTitle": "A Gym, Not Softplay",
@@ -111,7 +111,7 @@
       "access": "24/7 access — train on your schedule",
       "coaching": "Expert personal training on-site",
       "community": "A welcoming North Wales training community",
-      "quality": "Premium equipment in a clean, professional environment"
+      "quality": "Free weights, machines, cardio, cables, and boxing — all in a clean, professional space"
     }
   },
   "personalTraining": {
@@ -171,21 +171,44 @@
     }
   },
   "membership": {
-    "metaTitle": "24 Hour Gym Blaenau Ffestiniog | Big Dragons Gym",
-    "metaDescription": "Join Big Dragons Gym for round-the-clock access in Blaenau Ffestiniog. Train whenever suits you — early mornings, late nights, any day.",
+    "metaTitle": "Gym Membership from £30/month | Big Dragons Gym Blaenau Ffestiniog",
+    "metaDescription": "Big Dragons Gym membership from £15/week or £30/month. 24/7 gym access in Blaenau Ffestiniog — plus kids stamp cards available.",
     "h1": "Gym Membership",
-    "intro": "Most gyms close early. Big Dragons Gym doesn't. Train on your schedule — any time, day or night.",
+    "intro": "Most gyms close early. Big Dragons Gym doesn't. Train on your schedule — any time, day or night — with straightforward pricing.",
+    "pricing": {
+      "title": "Membership Pricing",
+      "subtitle": "Simple rates for full gym access — no hidden fees.",
+      "featuredLabel": "Most popular",
+      "dealsNote": "Message us for current deals and offers — rates may vary with promotions.",
+      "plans": {
+        "monthly": {
+          "name": "Monthly Gym Membership",
+          "period": "per month",
+          "description": "Full 24/7 access to free weights, machines, cardio, cables, and the boxing area."
+        },
+        "weekly": {
+          "name": "Weekly Membership",
+          "period": "per week",
+          "description": "Flexible short-term access — ideal if you're trialling the gym or visiting the area."
+        },
+        "kidsStamp": {
+          "name": "Kids Stamp Card",
+          "period": "10 sessions",
+          "description": "Stamp card for 10 gym sessions — kids only. Ask us for age guidance when you enquire."
+        }
+      }
+    },
     "uspTitle": "Train on Your Schedule",
     "usp": "Shift workers, early risers, night owls — life doesn't fit a 9-to-5 gym schedule. At Big Dragons Gym, the doors are always open.",
     "includesTitle": "What's Included",
     "includes": {
       "access": "Gym access any time, day or night",
-      "equipment": "Premium free weights and training equipment",
+      "equipment": "Free weights, resistance machines, cable stations, cardio equipment, and a boxing area",
       "facility": "Clean, professional training environment",
       "community": "Supportive local gym community"
     },
     "howToJoinTitle": "How to Join",
-    "howToJoin": "Contact us to discuss membership options and get set up. We'll walk you through access instructions and answer any questions.",
+    "howToJoin": "Choose the plan that suits you and contact us to get set up. We'll walk you through access instructions and answer any questions.",
     "safetyTitle": "Access & Safety",
     "safety": "Members receive clear access instructions upon joining. The facility is monitored and maintained to a high standard for safe training at any hour.",
     "ctaTitle": "Ready to join?",
@@ -271,11 +294,13 @@
       "q3": "Do you offer personal training?",
       "a3": "Yes. We offer one-to-one personal training for all levels. Contact us to discuss your goals.",
       "q4": "How do I join?",
-      "a4": "Contact us by phone, WhatsApp, or the enquiry form on our website. We'll discuss membership options and get you set up.",
+      "a4": "Contact us by phone, WhatsApp, or the enquiry form on our website. Monthly membership is £30, weekly is £15, and kids stamp cards (10 sessions) are £20 — we'll get you set up with access.",
       "q5": "Where are you located?",
       "a5": "Jerusalem Chapel, 32 High Street, Blaenau Ffestiniog, LL41 3AL — in the town centre on High Street.",
       "q6": "Do you offer nutrition advice?",
-      "a6": "Yes. We offer practical nutrition guidance and habit coaching to support your training goals. This is general fitness advice, not medical nutrition therapy."
+      "a6": "Yes. We offer practical nutrition guidance and habit coaching to support your training goals. This is general fitness advice, not medical nutrition therapy.",
+      "q7": "What equipment is available?",
+      "a7": "Members have access to free weights, dumbbell racks, resistance machines, cable stations, cardio equipment, and a dedicated boxing area with heavy bags — all included in membership."
     }
   },
   "areas": {
@@ -332,6 +357,57 @@
         "directions": "Follow the A5 to Betws-y-Coed then the A470 towards Blaenau Ffestiniog. Find us at Jerusalem Chapel, 32 High Street, LL41 3AL.",
         "ctaTitle": "Snowdonia Gym Training",
         "ctaSubtitle": "Contact Big Dragons Gym about membership and coaching."
+      }
+    }
+  },
+  "facilities": {
+    "title": "Inside Big Dragons Gym",
+    "subtitle": "A full-service training floor — strength, cardio, cables, and boxing — in the heart of Blaenau Ffestiniog.",
+    "gallery": {
+      "overview": {
+        "title": "Full Training Floor",
+        "description": "Cardio, free weights, Smith machine, and cable stations in one open-plan space.",
+        "alt": "Wide view of Big Dragons Gym training floor with cardio and free weights"
+      },
+      "freeWeights": {
+        "title": "Free Weights & Power Racks",
+        "description": "Barbells, benches, and squat racks for compound lifting — with North Wales pride on display.",
+        "alt": "Free weights area with Welsh flag and bench press at Big Dragons Gym"
+      },
+      "dumbbells": {
+        "title": "Dumbbell Zone",
+        "description": "Extensive dumbbell racks and adjustable benches for upper-body and isolation work.",
+        "alt": "Dumbbell racks and weight benches at Big Dragons Gym"
+      },
+      "strength": {
+        "title": "Strength Stations",
+        "description": "Leg press, bench press, and plate-loaded kit for serious strength training.",
+        "alt": "Leg press and bench press stations at Big Dragons Gym"
+      },
+      "machines": {
+        "title": "Resistance Machines",
+        "description": "Plate-loaded and selectorised machines for chest, legs, and full-body work.",
+        "alt": "Resistance machines including chest press at Big Dragons Gym"
+      },
+      "cables": {
+        "title": "Cable & Functional Area",
+        "description": "Cable crossovers and functional trainers for versatile push, pull, and core work.",
+        "alt": "Cable machines and gym interior at Big Dragons Gym"
+      },
+      "boxing": {
+        "title": "Boxing Area",
+        "description": "Heavy bags and padded flooring for boxing, bag work, and combat-style conditioning.",
+        "alt": "Boxing heavy bags on red mats at Big Dragons Gym"
+      },
+      "reception": {
+        "title": "Reception & Welcome Desk",
+        "description": "Branded reception with member check-in — your first stop when you arrive.",
+        "alt": "Big Dragons Gym reception desk with logo"
+      },
+      "welcome": {
+        "title": "Member Access",
+        "description": "Step from reception straight onto the training floor — 24/7 for members.",
+        "alt": "View from reception across the Big Dragons Gym training floor"
       }
     }
   },

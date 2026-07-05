@@ -1,4 +1,3 @@
-import { CTABand } from "@/components/sections/CTABand";
 import { PageHero } from "@/components/sections/PageHero";
 import { RelatedBlogLink } from "@/components/sections/RelatedBlogLink";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
@@ -138,14 +137,6 @@ export default async function LocationPage({ params }: Props) {
           </FadeIn>
         </div>
       </section>
-
-      <CTABand
-        title={t("h1")}
-        subtitle={t("intro")}
-        primaryLabel={tCta("getDirections")}
-        primaryExternalHref={getGoogleMapsDirectionsUrl()}
-        secondaryLabel={tCta("callUs")}
-      />
     </>
   );
 }

@@ -3,8 +3,9 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { MapDirectionsLight } from "@/components/ui/MapDirections";
 import { MapEmbed } from "@/components/ui/MapEmbed";
+import { WhatsAppIcon } from "@/components/ui/SocialIcons";
 import { BUSINESS } from "@/lib/constants";
-import { MessageCircle, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildPageMetadata } from "@/lib/metadata";
 
@@ -72,8 +73,8 @@ export default async function ContactPage({ params, searchParams }: Props) {
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 rounded bg-gray-100 p-4 transition-colors hover:bg-gray-200"
                 >
-                  <span className="flex h-12 w-12 items-center justify-center rounded bg-green-700 text-white">
-                    <MessageCircle className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
+                  <span className="flex h-12 w-12 items-center justify-center rounded bg-white shadow-sm ring-1 ring-black/5">
+                    <WhatsAppIcon className="h-6 w-6" />
                   </span>
                   <div>
                     <p className="text-sm text-brand-black/60">{tCta("whatsapp")}</p>

@@ -1,4 +1,4 @@
-import { CTABand } from "@/components/sections/CTABand";
+import { FacilitiesSection } from "@/components/sections/FacilitiesSection";
 import { HomeHero } from "@/components/sections/HomeHero";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { SocialSection } from "@/components/sections/SocialSection";
@@ -25,22 +25,14 @@ export const generateMetadata = async ({ params }: Props) => {
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "home" });
-  const tCta = await getTranslations({ locale, namespace: "cta" });
 
   return (
     <>
       <HomeHero />
       <USPSection />
       <ServicesSection />
+      <FacilitiesSection />
       <SocialSection />
-      <CTABand
-        title={t("finalCtaTitle")}
-        subtitle={t("finalCtaSubtitle")}
-        primaryLabel={tCta("bookPT")}
-        secondaryLabel={tCta("callUs")}
-        contactInterest="pt"
-      />
     </>
   );
 }

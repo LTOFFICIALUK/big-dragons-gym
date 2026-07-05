@@ -2,8 +2,7 @@ import { Link } from "@/i18n/navigation";
 import { BUSINESS, IMAGES } from "@/lib/constants";
 import { BuiltByCredit } from "@/components/ui/BuiltByCredit";
 import { MapDirections } from "@/components/ui/MapDirections";
-import { FacebookIconMono, InstagramIconMono } from "@/components/ui/SocialIcons";
-import { MessageCircle } from "lucide-react";
+import { FacebookIcon, InstagramIcon, WhatsAppIcon } from "@/components/ui/SocialIcons";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -80,28 +79,28 @@ export const Footer = () => {
                 href={BUSINESS.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-white hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white shadow-sm transition-transform hover:scale-105"
                 aria-label="Instagram"
               >
-                <InstagramIconMono className="h-4 w-4" />
+                <InstagramIcon className="h-5 w-5" />
               </a>
               <a
                 href={BUSINESS.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-white hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white shadow-sm transition-transform hover:scale-105"
                 aria-label="Facebook"
               >
-                <FacebookIconMono className="h-4 w-4" />
+                <FacebookIcon className="h-5 w-5" />
               </a>
               <a
                 href={BUSINESS.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-white hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white shadow-sm transition-transform hover:scale-105"
                 aria-label="WhatsApp"
               >
-                <MessageCircle className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+                <WhatsAppIcon className="h-5 w-5" />
               </a>
             </div>
           </div>

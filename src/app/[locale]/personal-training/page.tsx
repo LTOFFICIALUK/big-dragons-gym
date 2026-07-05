@@ -1,4 +1,3 @@
-import { CTABand } from "@/components/sections/CTABand";
 import { PageHero } from "@/components/sections/PageHero";
 import { RelatedBlogLink } from "@/components/sections/RelatedBlogLink";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
@@ -125,13 +124,6 @@ export default async function PersonalTrainingPage({ params }: Props) {
           </FadeIn>
         </div>
       </section>
-
-      <CTABand
-        title={t("h1")}
-        subtitle={t("intro")}
-        primaryLabel={tCta("bookPT")}
-        secondaryLabel={tCta("callUs")}
-      />
     </>
   );
 }

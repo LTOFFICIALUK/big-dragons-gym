@@ -1,4 +1,4 @@
-import { CTABand } from "@/components/sections/CTABand";
+import { MembershipPricing } from "@/components/sections/MembershipPricing";
 import { PageHero } from "@/components/sections/PageHero";
 import { RelatedBlogLink } from "@/components/sections/RelatedBlogLink";
 import { FadeIn } from "@/components/ui/FadeIn";
@@ -42,6 +42,8 @@ export default async function MembershipPage({ params }: Props) {
   return (
     <>
       <PageHero title={t("h1")} subtitle={t("intro")} image={IMAGES.membership} />
+
+      <MembershipPricing />
 
       <section className="section-padding bg-white">
         <div className="container-narrow max-w-3xl space-y-12">
@@ -105,13 +107,6 @@ export default async function MembershipPage({ params }: Props) {
           </FadeIn>
         </div>
       </section>
-
-      <CTABand
-        title={t("ctaTitle")}
-        subtitle={t("ctaSubtitle")}
-        primaryLabel={tCta("joinNow")}
-        secondaryLabel={tCta("callUs")}
-      />
     </>
   );
 }

@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "why-big-dragons-gym-24-7-blaenau-ffestiniog",
     readTime: 5,
-    image: IMAGES.gymFloor,
+    image: IMAGES.hero,
     en: {
       title:
         "Why Big Dragons Gym is Blaenau Ffestiniog's 24/7 Fitness Home",
@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
         "Discover why Big Dragons Gym has become the go-to 24/7 fitness facility in Blaenau Ffestiniog and North Wales.",
       content: [
         "When you're looking for a gym in Blaenau Ffestiniog, you want more than just equipment — you want a place that fits your life. Big Dragons Gym offers exactly that: 24/7 access, expert personal training with Dei, and a premium training environment in the heart of High Street.",
-        "Located inside Jerusalem Chapel at 32 High Street, Big Dragons Gym is a dedicated fitness facility — completely separate from Little Dragons Softplay in the same building. We're proud to serve the local community with unrestricted access, quality equipment, and a no-nonsense approach to training.",
+        "Located inside Jerusalem Chapel at 32 High Street, Big Dragons Gym is a dedicated fitness facility — completely separate from Little Dragons Softplay in the same building. Our training floor includes free weights, resistance machines, cable stations, cardio equipment, and a boxing area — all accessible 24/7.",
         "Whether you're an early riser hitting the gym before work, a shift worker training at midnight, or someone who prefers the quiet of late evening sessions, our 24/7 model means you're never restricted by someone else's schedule.",
         "Beyond access, we offer personal training and nutrition guidance to help you train smarter. Dei provides one-to-one coaching for all levels — from complete beginners to experienced lifters chasing new personal bests.",
         "We're more than a gym — we're a North Wales training community. If you're in Blaenau Ffestiniog, Ffestiniog, Dolwyddelan, or the wider Snowdonia area, we'd love to welcome you. Contact Dei today to find out more about membership and personal training.",

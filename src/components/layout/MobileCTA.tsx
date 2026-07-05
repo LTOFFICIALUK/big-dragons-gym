@@ -2,8 +2,9 @@
 
 import { Link } from "@/i18n/navigation";
 import { trackConversion } from "@/lib/analytics";
+import { WhatsAppIcon } from "@/components/ui/SocialIcons";
 import { BUSINESS } from "@/lib/constants";
-import { MessageCircle, Phone, Send } from "lucide-react";
+import { Phone, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export const MobileCTA = () => {
@@ -37,7 +38,7 @@ export const MobileCTA = () => {
           className="flex min-h-[3.25rem] flex-col items-center justify-center gap-0.5 px-1 py-2.5 text-[10px] font-semibold uppercase tracking-wide text-white transition-colors hover:bg-white/5 sm:text-xs"
           aria-label={t("whatsapp")}
         >
-          <MessageCircle className="h-5 w-5 shrink-0" strokeWidth={1.75} aria-hidden="true" />
+          <WhatsAppIcon className="h-5 w-5 shrink-0" />
           <span className="truncate">{t("whatsapp")}</span>
         </a>
         <Link

@@ -17,7 +17,7 @@ export const HomeHero = () => {
     <section className="relative overflow-hidden bg-maroon pt-16 md:pt-20">
       <Image
         src={IMAGES.hero}
-        alt="Big Dragons Gym training floor with free weights"
+        alt="Big Dragons Gym training floor with free weights, cardio, and resistance equipment"
         fill
         priority
         className="object-cover"

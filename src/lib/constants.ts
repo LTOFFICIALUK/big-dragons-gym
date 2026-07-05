@@ -23,13 +23,59 @@ export const BUSINESS = {
 } as const;
 
 export const IMAGES = {
-  hero: "/media/gym-hero.jpg",
-  gymFloor: "/media/gym-floor.jpg",
-  personalTraining: "/media/pt-coaching.jpg",
-  nutrition: "/media/nutrition.jpg",
-  membership: "/media/gym-247.jpg",
+  hero: "/media/gym-floor-overview.jpg",
+  gymFloor: "/media/free-weights-welsh-flag.jpg",
+  personalTraining: "/media/strength-training-area.jpg",
+  nutrition: "/media/dumbbell-free-weights.jpg",
+  membership: "/media/reception-gym-floor.jpg",
   logo: "/media/logo-crest.jpg",
-  brand: "/media/gym-brand.jpg",
+  brand: "/media/reception-desk.jpg",
+} as const;
+
+export const FACILITY_GALLERY = [
+  {
+    src: "/media/gym-floor-overview.jpg",
+    key: "overview",
+  },
+  {
+    src: "/media/free-weights-welsh-flag.jpg",
+    key: "freeWeights",
+  },
+  {
+    src: "/media/dumbbell-free-weights.jpg",
+    key: "dumbbells",
+  },
+  {
+    src: "/media/strength-training-area.jpg",
+    key: "strength",
+  },
+  {
+    src: "/media/resistance-machines.jpg",
+    key: "machines",
+  },
+  {
+    src: "/media/gym-interior-cable-area.jpg",
+    key: "cables",
+  },
+  {
+    src: "/media/boxing-area.jpg",
+    key: "boxing",
+  },
+  {
+    src: "/media/reception-desk.jpg",
+    key: "reception",
+  },
+  {
+    src: "/media/reception-gym-floor.jpg",
+    key: "welcome",
+  },
+] as const;
+
+/** Published membership rates (GBP) — keep in sync with in-gym pricing. */
+export const MEMBERSHIP_PRICES = {
+  monthly: 30,
+  weekly: 15,
+  kidsStamp: 20,
 } as const;
 
 /** Developer credit — required on every client site footer (Benza pattern). */
