@@ -22,7 +22,7 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-maroon text-white">
+    <footer className="bg-maroon pb-[calc(4.75rem+env(safe-area-inset-bottom,0px))] text-white lg:pb-0">
       <div className="border-b border-white/10">
         <div className="container-narrow py-10 md:py-12">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">

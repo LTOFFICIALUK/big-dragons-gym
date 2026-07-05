@@ -58,7 +58,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <link rel="icon" href="/media/logo-crest.jpg" />
         <JsonLd data={buildGymSchema()} />
       </head>
-      <body className="pb-[4.75rem] lg:pb-0">
+      <body className="flex min-h-dvh flex-col">
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>
