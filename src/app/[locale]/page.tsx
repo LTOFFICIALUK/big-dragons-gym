@@ -1,6 +1,5 @@
 import { CTABand } from "@/components/sections/CTABand";
 import { HomeHero } from "@/components/sections/HomeHero";
-import { LocationStrip } from "@/components/sections/LocationStrip";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { SocialSection } from "@/components/sections/SocialSection";
 import { USPSection } from "@/components/sections/USPSection";
@@ -39,7 +38,6 @@ export default async function HomePage({ params }: Props) {
       <USPSection />
       <ServicesSection />
       <SocialSection />
-      <LocationStrip />
       <CTABand
         title={t("finalCtaTitle")}
         subtitle={t("finalCtaSubtitle")}
