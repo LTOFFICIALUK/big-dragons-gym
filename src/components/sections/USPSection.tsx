@@ -19,7 +19,7 @@ const UspItem = ({ label, Icon, duplicate = false }: UspItemProps) => (
     className={`flex shrink-0 items-center gap-3 px-4 sm:px-6${duplicate ? " usp-marquee-duplicate" : ""}`}
     aria-hidden={duplicate || undefined}
   >
-    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-black/5">
+    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gray-100 shadow-sm ring-1 ring-black/5">
       <Icon className="h-5 w-5 text-primary-red" strokeWidth={1.75} aria-hidden="true" />
     </div>
     <p className="whitespace-nowrap text-sm font-semibold text-maroon sm:text-base">{label}</p>
@@ -40,7 +40,7 @@ export const USPSection = () => {
   return (
     <>
       <section
-        className="relative bg-gray-100 pb-8 pt-10 md:pb-10 md:pt-12"
+        className="relative bg-white pb-8 pt-10 md:pb-10 md:pt-12"
         aria-label={t("uspMarqueeLabel")}
       >
         <SectionTransition fill="gray-100" anchor="lower" size="md" />
@@ -63,7 +63,6 @@ export const USPSection = () => {
       </section>
 
       <section className="relative section-padding bg-white">
-        <SectionTransition fill="gray-100" anchor="lower" size="md" />
         <div className="container-narrow">
           <FadeIn className="text-center">
             <h2 className="font-display text-3xl tracking-wide text-maroon sm:text-4xl md:text-5xl">
