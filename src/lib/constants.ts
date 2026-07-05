@@ -52,3 +52,9 @@ export const SOCIAL_POSTS = [
     href: "https://www.instagram.com/big_dragon_gym/",
   },
 ] as const;
+
+/** Developer credit — required on every client site footer (Benza pattern). */
+export const BUILT_BY = {
+  name: "Luke Carter",
+  href: "https://www.linkedin.com/in/luke-carter-developer/",
+} as const;

@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import { BUSINESS, IMAGES } from "@/lib/constants";
+import { BuiltByCredit } from "@/components/ui/BuiltByCredit";
 import { MapDirections } from "@/components/ui/MapDirections";
 import { ExternalLink, MessageCircle } from "lucide-react";
 import Image from "next/image";
@@ -157,7 +158,10 @@ export const Footer = () => {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-8 text-center text-sm text-white/50">
-          © {year} Big Dragons Gym. {t("rights")}
+          <p>
+            © {year} Big Dragons Gym. {t("rights")}
+          </p>
+          <BuiltByCredit className="mt-3" />
         </div>
       </div>
     </footer>
