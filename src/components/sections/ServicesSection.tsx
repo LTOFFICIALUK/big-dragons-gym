@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { IMAGES } from "@/lib/constants";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -64,9 +65,11 @@ export const ServicesSection = () => {
                   </p>
                   <span className="mt-4 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-primary-red">
                     {tCta("readMore")}
-                    <span className="transition-transform group-hover:translate-x-1">
-                      →
-                    </span>
+                    <ArrowRight
+                      className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                      strokeWidth={2}
+                      aria-hidden="true"
+                    />
                   </span>
                 </div>
               </Link>

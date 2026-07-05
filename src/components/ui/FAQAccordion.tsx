@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Plus } from "lucide-react";
 import { useState } from "react";
 import { FadeIn } from "./FadeIn";
 
@@ -51,7 +52,7 @@ export const FAQAccordion = ({ items }: FAQAccordionProps) => {
                   className={`flex h-8 w-8 shrink-0 items-center justify-center rounded bg-primary-red/10 text-primary-red transition-transform duration-300 ${isOpen ? "rotate-45" : ""}`}
                   aria-hidden="true"
                 >
-                  +
+                  <Plus className="h-4 w-4" strokeWidth={2} />
                 </span>
               </button>
               <div
@@ -60,9 +61,7 @@ export const FAQAccordion = ({ items }: FAQAccordionProps) => {
                 aria-labelledby={`faq-button-${index}`}
                 className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 pb-5 opacity-100" : "max-h-0 opacity-0"}`}
               >
-                <p className="text-brand-black/80 leading-relaxed">
-                  {item.answer}
-                </p>
+                <p className="leading-relaxed text-brand-black/80">{item.answer}</p>
               </div>
             </div>
           </FadeIn>

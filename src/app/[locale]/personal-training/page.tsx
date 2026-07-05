@@ -3,6 +3,7 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Check } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { BUSINESS, IMAGES, SITE_URL } from "@/lib/constants";
 import { buildFAQSchema, buildServiceSchema } from "@/lib/schema";
@@ -94,7 +95,7 @@ export default async function PersonalTrainingPage({ params }: Props) {
                   key={key}
                   className="flex items-start gap-3 rounded bg-gray-100 p-4"
                 >
-                  <span className="font-display text-xl text-primary-red">✓</span>
+                  <Check className="mt-0.5 h-5 w-5 shrink-0 text-primary-red" strokeWidth={2.5} aria-hidden="true" />
                   <span className="text-brand-black/80">{t(`includes.${key}`)}</span>
                 </li>
               ))}

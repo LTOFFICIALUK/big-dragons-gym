@@ -2,6 +2,7 @@ import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
 import { Link } from "@/i18n/navigation";
 import { blogPosts } from "@/lib/blog";
+import { ArrowRight } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 
@@ -59,8 +60,9 @@ export default async function BlogPage({ params }: Props) {
                         <p className="mt-3 text-sm text-brand-black/70 line-clamp-3">
                           {content.excerpt}
                         </p>
-                        <span className="mt-4 inline-flex text-sm font-bold uppercase tracking-wider text-primary-red">
-                          {tCta("readMore")} →
+                        <span className="mt-4 inline-flex items-center gap-1 text-sm font-bold uppercase tracking-wider text-primary-red">
+                          {tCta("readMore")}
+                          <ArrowRight className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
                         </span>
                       </div>
                     </Link>

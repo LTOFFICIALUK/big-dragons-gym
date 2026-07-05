@@ -3,6 +3,7 @@
 import { Link, usePathname } from "@/i18n/navigation";
 import { BUSINESS, IMAGES } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { ComponentProps, useEffect, useRef, useState } from "react";
@@ -90,19 +91,14 @@ const ServicesDropdown = ({
         onKeyDown={handleKeyDown}
       >
         {label}
-        <svg
+        <ChevronDown
           aria-hidden="true"
-          viewBox="0 0 12 12"
           className={cn(
             "h-3 w-3 transition-transform duration-200",
             isOpen && "rotate-180",
           )}
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <path d="M2 4l4 4 4-4" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+          strokeWidth={2}
+        />
       </button>
 
       <div
