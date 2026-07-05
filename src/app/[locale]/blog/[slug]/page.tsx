@@ -1,7 +1,11 @@
 import { CTABand } from "@/components/sections/CTABand";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { Link } from "@/i18n/navigation";
 import { getBlogPostContent, blogPosts } from "@/lib/blog";
+import { SITE_URL } from "@/lib/constants";
+import { buildPageMetadata, getAbsolutePageUrl } from "@/lib/metadata";
+import { buildArticleSchema } from "@/lib/schema";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -21,10 +25,14 @@ export const generateMetadata = async ({ params }: Props) => {
 
   if (!post) return { title: "Not Found" };
 
-  return {
+  return buildPageMetadata({
+    locale,
+    pathname: "/blog/[slug]",
+    params: { slug },
     title: post.content.title,
     description: post.content.excerpt,
-  };
+    ogImage: `${SITE_URL}${post.image}`,
+  });
 };
 
 export default async function BlogPostPage({ params }: Props) {
@@ -38,9 +46,19 @@ export default async function BlogPostPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "blog" });
   const tCta = await getTranslations({ locale, namespace: "cta" });
   const { title, excerpt, content: paragraphs } = post.content;
+  const pageUrl = getAbsolutePageUrl(lang, "/blog/[slug]", { slug });
 
   return (
     <>
+      <JsonLd
+        data={buildArticleSchema({
+          title,
+          description: excerpt,
+          url: pageUrl,
+          image: post.image,
+          datePublished: "2026-01-01",
+        })}
+      />
       <article>
         <div className="relative h-[40vh] min-h-[300px] bg-maroon pt-16 md:pt-20">
           <Image
@@ -87,7 +105,10 @@ export default async function BlogPostPage({ params }: Props) {
               ))}
             </div>
             <FadeIn className="mt-12 flex flex-col gap-4 border-t border-black/10 pt-8 sm:flex-row">
-              <Link href="/personal-training" className="btn-primary">
+              <Link
+                href={{ pathname: "/contact", query: { interest: "pt" } }}
+                className="btn-primary"
+              >
                 {tCta("bookPT")}
               </Link>
               <Link href="/contact" className="btn-outline-dark">
@@ -103,6 +124,7 @@ export default async function BlogPostPage({ params }: Props) {
         subtitle={excerpt}
         primaryLabel={tCta("bookPT")}
         secondaryLabel={tCta("callUs")}
+        contactInterest="pt"
       />
     </>
   );

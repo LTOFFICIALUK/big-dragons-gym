@@ -262,7 +262,7 @@ export const Header = () => {
             </div>
 
             <Link
-              href="/contact"
+              href={{ pathname: "/contact", query: { interest: "pt" } }}
               className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded bg-primary-red px-4 py-2 text-xs font-bold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-maroon-light hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-red"
             >
               {tCta("bookPTHeader")}
@@ -324,7 +324,10 @@ export const Header = () => {
             </Link>
           </div>
           <div className="flex flex-col gap-2 px-3 pt-2">
-            <Link href="/contact" className="btn-primary text-center">
+            <Link
+              href={{ pathname: "/contact", query: { interest: "pt" } }}
+              className="btn-primary text-center"
+            >
               {tCta("bookPT")}
             </Link>
             <a

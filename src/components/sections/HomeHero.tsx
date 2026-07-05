@@ -45,7 +45,10 @@ export const HomeHero = () => {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
-              <Link href="/contact" className="btn-primary text-center">
+              <Link
+                href={{ pathname: "/contact", query: { interest: "pt" } }}
+                className="btn-primary text-center"
+              >
                 {tCta("bookPT")}
               </Link>
               <a href={`tel:${BUSINESS.phone}`} className="btn-secondary text-center">

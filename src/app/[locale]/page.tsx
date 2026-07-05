@@ -3,6 +3,7 @@ import { HomeHero } from "@/components/sections/HomeHero";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { SocialSection } from "@/components/sections/SocialSection";
 import { USPSection } from "@/components/sections/USPSection";
+import { buildPageMetadata } from "@/lib/metadata";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
@@ -13,17 +14,12 @@ export const generateMetadata = async ({ params }: Props) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    pathname: "/",
     title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: {
-      languages: {
-        "en-GB": "/",
-        "cy-GB": "/cy",
-        "x-default": "/",
-      },
-    },
-  };
+  });
 };
 
 export default async function HomePage({ params }: Props) {
@@ -43,6 +39,7 @@ export default async function HomePage({ params }: Props) {
         subtitle={t("finalCtaSubtitle")}
         primaryLabel={tCta("bookPT")}
         secondaryLabel={tCta("callUs")}
+        contactInterest="pt"
       />
     </>
   );

@@ -1,11 +1,14 @@
 import { CTABand } from "@/components/sections/CTABand";
 import { PageHero } from "@/components/sections/PageHero";
 import { RelatedBlogLink } from "@/components/sections/RelatedBlogLink";
+import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Link } from "@/i18n/navigation";
-import { IMAGES, SITE_URL } from "@/lib/constants";
-import { buildServiceSchema } from "@/lib/schema";
+import { buildPageBreadcrumbSchema } from "@/lib/breadcrumbs";
+import { IMAGES } from "@/lib/constants";
+import { buildPageMetadata, getAbsolutePageUrl } from "@/lib/metadata";
+import { buildFAQSchema, buildServiceSchema } from "@/lib/schema";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
@@ -16,24 +19,42 @@ export const generateMetadata = async ({ params }: Props) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "nutrition" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    pathname: "/nutrition",
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 };
 
 export default async function NutritionPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "nutrition" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
   const tCta = await getTranslations({ locale, namespace: "cta" });
+  const lang = locale as "en" | "cy";
 
   const includes = ["planning", "habits", "alignment", "support"] as const;
-  const pageUrl = `${SITE_URL}${locale === "cy" ? "/cy/bwyd" : "/nutrition"}`;
+  const faqs = [
+    { question: t("faqs.q1"), answer: t("faqs.a1") },
+    { question: t("faqs.q2"), answer: t("faqs.a2") },
+    { question: t("faqs.q3"), answer: t("faqs.a3") },
+  ];
+  const pageUrl = getAbsolutePageUrl(lang, "/nutrition");
 
   return (
     <>
-      <JsonLd data={buildServiceSchema(t("h1"), t("intro"), pageUrl)} />
+      <JsonLd
+        data={[
+          buildPageBreadcrumbSchema(lang, [
+            { name: tNav("home"), pathname: "/" },
+            { name: t("h1"), url: pageUrl },
+          ]),
+          buildServiceSchema(t("h1"), t("intro"), pageUrl),
+          buildFAQSchema(faqs),
+        ]}
+      />
       <PageHero title={t("h1")} subtitle={t("intro")} image={IMAGES.nutrition} />
 
       <section className="section-padding bg-white">
@@ -65,7 +86,10 @@ export default async function NutritionPage({ params }: Props) {
               ))}
             </ul>
             <p className="mt-8 text-brand-black/70">{t("linkPT")}</p>
-            <Link href="/contact" className="btn-primary mt-6 inline-flex">
+            <Link
+              href={{ pathname: "/contact", query: { interest: "nutrition" } }}
+              className="btn-primary mt-6 inline-flex"
+            >
               {tCta("enquire")}
             </Link>
             <RelatedBlogLink
@@ -77,10 +101,24 @@ export default async function NutritionPage({ params }: Props) {
         </div>
       </section>
 
+      <section className="section-padding bg-gray-100">
+        <div className="container-narrow max-w-3xl">
+          <FadeIn>
+            <h2 className="font-display text-3xl tracking-wide text-maroon">
+              {t("faqTitle")}
+            </h2>
+            <div className="mt-8">
+              <FAQAccordion items={faqs} />
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       <CTABand
         title={t("h1")}
         subtitle={t("intro")}
-        primaryLabel={tCta("bookPT")}
+        primaryLabel={tCta("enquire")}
+        contactInterest="nutrition"
         secondaryLabel={tCta("callUs")}
       />
     </>

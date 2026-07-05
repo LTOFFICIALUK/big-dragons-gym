@@ -9,6 +9,7 @@ import { Link } from "@/i18n/navigation";
 import { BUSINESS, IMAGES, SITE_URL } from "@/lib/constants";
 import { buildFAQSchema, buildServiceSchema } from "@/lib/schema";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -18,10 +19,12 @@ export const generateMetadata = async ({ params }: Props) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "personalTraining" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    pathname: "/personal-training",
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 };
 
 export default async function PersonalTrainingPage({ params }: Props) {

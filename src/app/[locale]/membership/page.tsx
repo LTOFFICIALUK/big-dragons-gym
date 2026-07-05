@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { IMAGES } from "@/lib/constants";
 import { Clock, Dumbbell, ShieldCheck, Users, type LucideIcon } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -22,10 +23,12 @@ export const generateMetadata = async ({ params }: Props) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "membership" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    pathname: "/membership",
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 };
 
 export default async function MembershipPage({ params }: Props) {

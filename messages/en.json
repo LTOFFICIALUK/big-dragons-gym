@@ -1,7 +1,7 @@
 {
   "metadata": {
     "siteName": "Big Dragons Gym",
-    "defaultDescription": "24/7 fitness in Blaenau Ffestiniog. Personal training, nutrition advice, and round-the-clock gym access."
+    "defaultDescription": "24/7 fitness centre and gym in Blaenau Ffestiniog, LL41 3AL. Personal training, nutrition advice, and round-the-clock gym access in Gwynedd."
   },
   "nav": {
     "home": "Home",
@@ -27,6 +27,7 @@
     "bookPT": "Book Personal Training",
     "bookPTHeader": "Book PT",
     "callUs": "Call Us",
+    "callDei": "Call Us",
     "whatsapp": "WhatsApp",
     "enquire": "Enquire",
     "getDirections": "Get Directions",
@@ -40,7 +41,7 @@
   },
   "home": {
     "metaTitle": "Big Dragons Gym — 24/7 Fitness in Blaenau Ffestiniog",
-    "metaDescription": "Personal training, nutrition advice, and 24/7 gym access in Blaenau Ffestiniog. Train on your schedule at your local premium gym.",
+    "metaDescription": "Personal training, nutrition advice, and 24/7 gym access in Blaenau Ffestiniog. Your local fitness centre in Gwynedd — train on your schedule.",
     "h1": "Big Dragons Gym — 24/7 Fitness in Blaenau Ffestiniog",
     "heroSubline": "Personal training, nutrition advice, and round-the-clock access — your local gym in the heart of Blaenau Ffestiniog.",
     "usps": {
@@ -163,7 +164,7 @@
   },
   "nutrition": {
     "metaTitle": "Nutrition Advice | Big Dragons Gym North Wales",
-    "metaDescription": "Practical nutrition advice and meal planning support at Big Dragons Gym, Blaenau Ffestiniog. Habit coaching aligned with your training goals.",
+    "metaDescription": "Practical nutrition advice for gym-goers in Blaenau Ffestiniog and Gwynedd. Habit coaching and meal planning aligned with your training at Big Dragons Gym.",
     "h1": "Nutrition Advice & Coaching",
     "intro": "Training and nutrition go hand in hand. At Big Dragons Gym, we offer practical nutrition guidance — not medical advice, but real-world support to fuel your progress.",
     "approachTitle": "Our Approach",
@@ -176,7 +177,16 @@
       "support": "Ongoing support alongside your gym programme"
     },
     "disclaimer": "Our nutrition guidance is for general fitness purposes only and is not a substitute for medical or dietary professional advice.",
-    "linkPT": "Nutrition coaching works best alongside personal training. Ask us about combined packages."
+    "linkPT": "Nutrition coaching works best alongside personal training. Ask us about combined packages.",
+    "faqTitle": "Nutrition FAQs",
+    "faqs": {
+      "q1": "Is this medical or dietitian advice?",
+      "a1": "No. Our nutrition guidance supports general fitness goals — building muscle, fat loss, and better eating habits. It is not a substitute for medical or registered dietitian advice.",
+      "q2": "Can nutrition coaching be combined with personal training?",
+      "a2": "Yes. Many members combine nutrition support with personal training for faster, more sustainable results. Ask us about combined packages.",
+      "q3": "Do I need to be a gym member?",
+      "a3": "Nutrition guidance is available to members and non-members. Contact us to discuss what would work best for you."
+    }
   },
   "membership": {
     "metaTitle": "24 Hour Gym Blaenau Ffestiniog | Big Dragons Gym",
@@ -284,6 +294,63 @@
       "a5": "Jerusalem Chapel, 32 High Street, Blaenau Ffestiniog, LL41 3AL — in the town centre on High Street.",
       "q6": "Do you offer nutrition advice?",
       "a6": "Yes. We offer practical nutrition guidance and habit coaching to support your training goals. This is general fitness advice, not medical nutrition therapy."
+    }
+  },
+  "areas": {
+    "h1": "Areas We Serve",
+    "whyTitle": "Your Local Gym in North Wales",
+    "gettingHereTitle": "Getting Here",
+    "servicesTitle": "Training at Big Dragons Gym",
+    "servicesList": {
+      "pt": "Personal training with one-to-one coaching for all levels",
+      "nutrition": "Practical nutrition advice aligned with your training",
+      "membership": "Gym membership with round-the-clock access"
+    },
+    "towns": {
+      "blaenau-ffestiniog": {
+        "name": "Blaenau Ffestiniog",
+        "metaTitle": "Gym Blaenau Ffestiniog | Big Dragons Gym LL41 3AL",
+        "metaDescription": "Big Dragons Gym on High Street, Blaenau Ffestiniog — 24/7 fitness centre, personal training, and nutrition advice. LL41 3AL.",
+        "h1": "Gym in Blaenau Ffestiniog",
+        "intro": "Big Dragons Gym is in the heart of Blaenau Ffestiniog on High Street — your local 24/7 fitness centre with personal training and nutrition support.",
+        "why": "Whether you live in town or nearby, Big Dragons Gym offers premium equipment, expert coaching, and flexible access inside Jerusalem Chapel at 32 High Street.",
+        "directions": "We're on High Street in the town centre — easy to reach on foot from local housing, the slate communities, and the A470 corridor.",
+        "ctaTitle": "Train in Blaenau Ffestiniog",
+        "ctaSubtitle": "Contact us about membership, personal training, or nutrition coaching today."
+      },
+      "dolwyddelan": {
+        "name": "Dolwyddelan",
+        "metaTitle": "Gym near Dolwyddelan | Big Dragons Gym",
+        "metaDescription": "Looking for a gym near Dolwyddelan? Big Dragons Gym in Blaenau Ffestiniog offers 24/7 access, PT, and nutrition advice — a short drive via the A470.",
+        "h1": "Gym near Dolwyddelan",
+        "intro": "Residents of Dolwyddelan and the Conwy Valley use Big Dragons Gym for flexible training without the commute to larger towns.",
+        "why": "Our Blaenau Ffestiniog gym combines serious free weights, personal training, and round-the-clock access — ideal if you want a premium facility close to home.",
+        "directions": "Head south on the A470 from Dolwyddelan towards Blaenau Ffestiniog. We're on High Street in the town centre, postcode LL41 3AL.",
+        "ctaTitle": "Gym Access near Dolwyddelan",
+        "ctaSubtitle": "Get in touch about membership or book a personal training session."
+      },
+      "penrhyndeudraeth": {
+        "name": "Penrhyndeudraeth",
+        "metaTitle": "Gym near Penrhyndeudraeth | Big Dragons Gym",
+        "metaDescription": "Gym with personal training near Penrhyndeudraeth and the Glaslyn Valley. Big Dragons Gym — 24/7 fitness in Blaenau Ffestiniog, LL41 3AL.",
+        "h1": "Gym near Penrhyndeudraeth",
+        "intro": "Big Dragons Gym serves Penrhyndeudraeth and the surrounding Glaslyn Valley with a full-service gym on Blaenau Ffestiniog High Street.",
+        "why": "Avoid busy chain gyms — train locally with 24/7 access, expert PT, and a supportive community atmosphere in Gwynedd.",
+        "directions": "Take the A4085 towards Beddgelert and join the A470 north to Blaenau Ffestiniog. We're centrally located on High Street.",
+        "ctaTitle": "Train near Penrhyndeudraeth",
+        "ctaSubtitle": "Enquire about membership or personal training today."
+      },
+      "betws-y-coed": {
+        "name": "Betws-y-Coed",
+        "metaTitle": "Gym near Betws-y-Coed | Big Dragons Gym Snowdonia",
+        "metaDescription": "Snowdonia gym access from Betws-y-Coed — Big Dragons Gym in Blaenau Ffestiniog offers 24/7 membership, PT, and nutrition coaching in Gwynedd.",
+        "h1": "Gym near Betws-y-Coed",
+        "intro": "From Betws-y-Coed and the Snowdonia National Park corridor, Big Dragons Gym is a practical choice for year-round strength and fitness training.",
+        "why": "Whether you're a local or work in tourism and hospitality, our 24/7 access means you can train early, late, or between shifts.",
+        "directions": "Follow the A5 to Betws-y-Coed then the A470 towards Blaenau Ffestiniog. Find us at Jerusalem Chapel, 32 High Street, LL41 3AL.",
+        "ctaTitle": "Snowdonia Gym Training",
+        "ctaSubtitle": "Contact Big Dragons Gym about membership and coaching."
+      }
     }
   },
   "privacy": {

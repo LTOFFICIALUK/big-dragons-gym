@@ -50,6 +50,10 @@ export const routing = defineRouting({
       en: "/cookies",
       cy: "/cwcis",
     },
+    "/areas/[town]": {
+      en: "/areas/[town]",
+      cy: "/areas/[town]",
+    },
   },
 });
 

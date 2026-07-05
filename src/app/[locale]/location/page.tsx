@@ -5,10 +5,14 @@ import { FadeIn, StaggerContainer, StaggerItem } from "@/components/ui/FadeIn";
 import { MapEmbed } from "@/components/ui/MapEmbed";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { MapDirectionsLight } from "@/components/ui/MapDirections";
+import { GEO_AREA_SLUGS } from "@/lib/areas";
+import { buildPageBreadcrumbSchema } from "@/lib/breadcrumbs";
 import { getGoogleMapsDirectionsUrl } from "@/lib/maps";
 import { BUSINESS } from "@/lib/constants";
-import { buildBreadcrumbSchema } from "@/lib/schema";
+import { getAbsolutePageUrl } from "@/lib/metadata";
+import { Link } from "@/i18n/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -18,26 +22,32 @@ export const generateMetadata = async ({ params }: Props) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "location" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    pathname: "/location",
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 };
 
 export default async function LocationPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "location" });
+  const tAreas = await getTranslations({ locale, namespace: "areas" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
   const tCta = await getTranslations({ locale, namespace: "cta" });
+  const lang = locale as "en" | "cy";
+  const pageUrl = getAbsolutePageUrl(lang, "/location");
 
   const directionKeys = ["a470", "station", "betws", "dolwyddelan"] as const;
 
   return (
     <>
       <JsonLd
-        data={buildBreadcrumbSchema([
-          { name: "Home", url: "https://bigdragonsgym.co.uk" },
-          { name: t("h1"), url: `https://bigdragonsgym.co.uk${locale === "cy" ? "/cy/lleoliad" : "/location"}` },
+        data={buildPageBreadcrumbSchema(lang, [
+          { name: tNav("home"), pathname: "/" },
+          { name: t("h1"), url: pageUrl },
         ])}
       />
       <PageHero title={t("h1")} subtitle={t("intro")} />
@@ -113,6 +123,18 @@ export default async function LocationPage({ params }: Props) {
               {t("areasTitle")}
             </h2>
             <p className="mt-4 text-white/80">{t("areas")}</p>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              {GEO_AREA_SLUGS.map((town) => (
+                <li key={town}>
+                  <Link
+                    href={{ pathname: "/areas/[town]", params: { town } }}
+                    className="inline-flex rounded-full border border-white/20 px-3 py-1 text-sm text-white/90 transition-colors hover:border-white hover:text-white"
+                  >
+                    {tAreas(`towns.${town}.name`)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </FadeIn>
         </div>
       </section>

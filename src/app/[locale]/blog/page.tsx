@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { blogPosts } from "@/lib/blog";
 import { ArrowRight } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/metadata";
 import Image from "next/image";
 
 type Props = {
@@ -14,10 +15,12 @@ export const generateMetadata = async ({ params }: Props) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    pathname: "/blog",
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 };
 
 export default async function BlogPage({ params }: Props) {

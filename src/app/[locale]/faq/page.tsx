@@ -5,6 +5,7 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildFAQSchema } from "@/lib/schema";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -14,10 +15,12 @@ export const generateMetadata = async ({ params }: Props) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "faq" });
 
-  return {
+  return buildPageMetadata({
+    locale,
+    pathname: "/faq",
     title: t("metaTitle"),
     description: t("metaDescription"),
-  };
+  });
 };
 
 export default async function FAQPage({ params }: Props) {

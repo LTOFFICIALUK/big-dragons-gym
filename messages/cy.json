@@ -176,7 +176,16 @@
       "support": "Cefnogaeth barhaus ochr yn ochr â'ch rhaglen campfa"
     },
     "disclaimer": "Mae ein cyngor bwyta iach ar gyfer dibenion ffitrwydd cyffredinol yn unig ac nid yw'n ddewis i gyngor proffesiynol meddygol neu ddeietegol.",
-    "linkPT": "Mae hyfforddi bwyta iach yn gweithio orau ochr yn ochr â hyfforddi personol. Gofynnwch i Dei am becynnau cyfunol."
+    "linkPT": "Mae hyfforddi bwyta iach yn gweithio orau ochr yn ochr â hyfforddi personol. Gofynnwch am becynnau cyfunol.",
+    "faqTitle": "Cwestiynau Bwyta Iach",
+    "faqs": {
+      "q1": "A yw hwn yn gyngor meddygol neu dietegydd?",
+      "a1": "Nac ydy. Mae ein cyngor bwyta iach yn cefnogi nodau ffitrwydd cyffredinol — nid yw'n ddibynadwy ar gyngor meddygol neu dietegydd cofrestredig.",
+      "q2": "A all hyfforddi bwyta iach gael ei gyfuno â hyfforddi personol?",
+      "a2": "Gall. Mae llawer o aelodau yn cyfuno cymorth bwyta iach â hyfforddi personol am ganlyniadau gwell a chynaliadwy.",
+      "q3": "A oes angen bod yn aelod o'r gampfa?",
+      "a3": "Mae cyngor bwyta iach ar gael i aelodau ac nad-aelodau. Cysylltwch i drafod beth fyddai orau i chi."
+    }
   },
   "membership": {
     "metaTitle": "Campfa 24 Awr Llan Ffestiniog | Big Dragons Gym",
@@ -277,13 +286,70 @@
       "q2": "A yw hwn yr un peth â Little Dragons Softplay?",
       "a2": "Nac ydy. Mae Big Dragons Gym a Little Dragons Softplay yn rhannu adeilad Capel Jerwsalem ar 32 Stryd Fawr, ond busnesau gwbl ar wahân ydynt.",
       "q3": "A ydych chi'n cynnig hyfforddi personol?",
-      "a3": "Ydyn. Mae Dei yn cynnig hyfforddi personol un-i-un ar gyfer pob lefel.",
+      "a3": "Ydyn. Rydym yn cynnig hyfforddi personol un-i-un ar gyfer pob lefel.",
       "q4": "Sut ydw i'n ymuno?",
-      "a4": "Cysylltwch â Dei dros y ffôn, WhatsApp, neu'r ffurflen ymholi ar ein gwefan.",
+      "a4": "Cysylltwch â ni dros y ffôn, WhatsApp, neu'r ffurflen ymholi ar ein gwefan.",
       "q5": "Ble rydych chi wedi'ch lleoli?",
       "a5": "Capel Jerwsalem, 32 Stryd Fawr, Llan Ffestiniog, LL41 3AL — yng nghanol y dref ar Stryd Fawr.",
       "q6": "A ydych chi'n cynnig cyngor bwyta iach?",
       "a6": "Ydyn. Rydym yn cynnig cyngor bwyta iach ymarferol a hyfforddi arferion i gefnogi eich nodau hyfforddi."
+    }
+  },
+  "areas": {
+    "h1": "Ardaloedd a Wasanaethwn",
+    "whyTitle": "Eich Campfa Leol yng Ngogledd Cymru",
+    "gettingHereTitle": "Cyrraedd",
+    "servicesTitle": "Hyfforddiant yn Big Dragons Gym",
+    "servicesList": {
+      "pt": "Hyfforddi personol un-i-un ar gyfer pob lefel",
+      "nutrition": "Cyngor bwyta iach ymarferol yn cyd-fynd â'ch hyfforddiant",
+      "membership": "Aelodaeth campfa gyda mynediad amser o'r dydd"
+    },
+    "towns": {
+      "blaenau-ffestiniog": {
+        "name": "Llan Ffestiniog",
+        "metaTitle": "Campfa Llan Ffestiniog | Big Dragons Gym LL41 3AL",
+        "metaDescription": "Big Dragons Gym ar Stryd Fawr, Llan Ffestiniog — campfa ffitrwydd 24/7, hyfforddi personol, a chyngor bwyta iach.",
+        "h1": "Campfa yn Llan Ffestiniog",
+        "intro": "Mae Big Dragons Gym yng nghanol Llan Ffestiniog ar Stryd Fawr — eich canolfan ffitrwydd leol gyda hyfforddi personol a chymorth bwyta iach.",
+        "why": "P'un a ydych chi'n byw yn y dref neu'n agos, mae Big Dragons Gym yn cynnig offer premium, hyfforddi arbenigol, a mynediad hyblyg y tu mewn i Gapl Jerwsalem ar 32 Stryd Fawr.",
+        "directions": "Rydym ar Stryd Fawr yng nghanol y dref — hawdd i gyrraedd ar droed o ardaloedd preswyl lleol a'r A470.",
+        "ctaTitle": "Hyfforddwch yn Llan Ffestiniog",
+        "ctaSubtitle": "Cysylltwch am aelodaeth, hyfforddi personol, neu hyfforddi bwyta iach heddiw."
+      },
+      "dolwyddelan": {
+        "name": "Dolwyddelan",
+        "metaTitle": "Campfa ger Dolwyddelan | Big Dragons Gym",
+        "metaDescription": "Chwilio am gampfa ger Dolwyddelan? Mae Big Dragons Gym yn Llan Ffestiniog yn cynnig mynediad 24/7, HP, a chyngor bwyta iach.",
+        "h1": "Campfa ger Dolwyddelan",
+        "intro": "Mae trigolion Dolwyddelan a Dyffryn Conwy yn defnyddio Big Dragons Gym am hyfforddiant hyblyg heb y daith i drefoedd mwy.",
+        "why": "Mae ein campfa yn Llan Ffestiniog yn cyfuno offer rhydd difrifol, hyfforddi personol, a mynediad amser o'r dydd.",
+        "directions": "Ewch tua'r de ar yr A470 o Dolwyddelan tuag at Llan Ffestiniog. Rydym ar Stryd Fawr, LL41 3AL.",
+        "ctaTitle": "Mynediad Campfa ger Dolwyddelan",
+        "ctaSubtitle": "Cysylltwch am aelodaeth neu archebu sesiwn hyfforddi personol."
+      },
+      "penrhyndeudraeth": {
+        "name": "Penrhyndeudraeth",
+        "metaTitle": "Campfa ger Penrhyndeudraeth | Big Dragons Gym",
+        "metaDescription": "Campfa gyda hyfforddi personol ger Penrhyndeudraeth a Dyffryn Glaslyn. Big Dragons Gym — ffitrwydd 24/7 yn Llan Ffestiniog.",
+        "h1": "Campfa ger Penrhyndeudraeth",
+        "intro": "Mae Big Dragons Gym yn gwasanaethu Penrhyndeudraeth a Dyffryn Glaslyn gyda chyfleuster campfa lawn ar Stryd Fawr Llan Ffestiniog.",
+        "why": "Osgoi campfeydd cadwyn prysur — hyfforddwch yn lleol gyda mynediad 24/7 a chymuned gefnogol yn Ny Gwynedd.",
+        "directions": "Cymerwch yr A4085 tuag at Beddgelert ac yna'r A470 tua'r gogledd i Lan Ffestiniog. Rydym ar Stryd Fawr.",
+        "ctaTitle": "Hyfforddwch ger Penrhyndeudraeth",
+        "ctaSubtitle": "Ymholi am aelodaeth neu hyfforddi personol heddiw."
+      },
+      "betws-y-coed": {
+        "name": "Betws-y-Coed",
+        "metaTitle": "Campfa ger Betws-y-Coed | Big Dragons Gym Eryri",
+        "metaDescription": "Mynediad campfa Eryri o Betws-y-Coed — Big Dragons Gym yn Llan Ffestiniog yn cynnig aelodaeth 24/7, HP, a hyfforddi bwyta iach.",
+        "h1": "Campfa ger Betws-y-Coed",
+        "intro": "O Betws-y-Coed a chyffordd Parc Cenedlaethol Eryri, mae Big Dragons Gym yn ddewis ymarferol ar gyfer hyfforddiant grym drwy'r flwyddyn.",
+        "why": "P'un a ydych chi'n breswyl neu'n gweithio mewn twristiaeth, mae ein mynediad 24/7 yn golygu y gallwch chi hyfforddi'n gynnar, yn hwyr, neu rhwng shifftiau.",
+        "directions": "Dilynwch yr A5 i Betws-y-Coed yna'r A470 tuag at Llan Ffestiniog. Dewch o hyd i ni yn Gapl Jerwsalem, 32 Stryd Fawr, LL41 3AL.",
+        "ctaTitle": "Hyfforddiant Campfa Eryri",
+        "ctaSubtitle": "Cysylltwch â Big Dragons Gym am aelodaeth a hyfforddi."
+      }
     }
   },
   "privacy": {

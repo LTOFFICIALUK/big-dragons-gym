@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { buildPageMetadata } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -10,7 +11,12 @@ export const generateMetadata = async ({ params }: Props) => {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "cookies" });
 
-  return { title: t("metaTitle") };
+  return buildPageMetadata({
+    locale,
+    pathname: "/cookies",
+    title: t("metaTitle"),
+    description: t("content").slice(0, 155),
+  });
 };
 
 export default async function CookiesPage({ params }: Props) {

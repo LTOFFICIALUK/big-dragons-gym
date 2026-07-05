@@ -1,6 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
+import { trackConversion } from "@/lib/analytics";
 import { useTranslations } from "next-intl";
 import { FormEvent, useState } from "react";
 import { FadeIn } from "@/components/ui/FadeIn";
@@ -36,6 +37,7 @@ export const ContactForm = ({ defaultInterest = "general" }: ContactFormProps) =
       });
 
       if (response.ok) {
+        trackConversion("form_submit", String(formData.get("interest") ?? "general"));
         setStatus("success");
         event.currentTarget.reset();
       } else {

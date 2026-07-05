@@ -23,7 +23,7 @@ const pathMap = {
     location: "/cy/lleoliad",
     contact: "/cy/cysylltu",
     blog: "/cy/blog",
-    faq: "/cy-cwestiynau",
+    faq: "/cy/cwestiynau",
     privacy: "/cy/polisi-preifatrwydd",
     cookies: "/cy/cwcis",
   },
