@@ -2,7 +2,6 @@
 
 import { HeroLocationMap } from "@/components/sections/HeroLocationMap";
 import { SectionTransition } from "@/components/ui/SectionTransition";
-import { Link } from "@/i18n/navigation";
 import { BUSINESS, IMAGES } from "@/lib/constants";
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
@@ -44,14 +43,8 @@ export const HomeHero = () => {
               {t("heroSubline")}
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
-              <Link
-                href={{ pathname: "/contact", query: { interest: "pt" } }}
-                className="btn-primary text-center"
-              >
-                {tCta("bookPT")}
-              </Link>
-              <a href={`tel:${BUSINESS.phone}`} className="btn-secondary text-center">
+            <div className="mt-8 sm:mt-10">
+              <a href={`tel:${BUSINESS.phone}`} className="btn-primary text-center">
                 {tCta("callUs")}
               </a>
             </div>

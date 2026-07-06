@@ -261,12 +261,12 @@ export const Header = () => {
               </Link>
             </div>
 
-            <Link
-              href={{ pathname: "/contact", query: { interest: "pt" } }}
+            <a
+              href={`tel:${BUSINESS.phone}`}
               className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded bg-primary-red px-4 py-2 text-xs font-bold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-maroon-light hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-red"
             >
-              {tCta("bookPTHeader")}
-            </Link>
+              {tCta("callUs")}
+            </a>
           </div>
 
           <button
@@ -323,16 +323,10 @@ export const Header = () => {
               {otherLocale === "en" ? tLang("english") : tLang("cymraeg")}
             </Link>
           </div>
-          <div className="flex flex-col gap-2 px-3 pt-2">
-            <Link
-              href={{ pathname: "/contact", query: { interest: "pt" } }}
-              className="btn-primary text-center"
-            >
-              {tCta("bookPT")}
-            </Link>
+          <div className="px-3 pt-2">
             <a
               href={`tel:${BUSINESS.phone}`}
-              className="btn-secondary text-center"
+              className="btn-primary block text-center"
             >
               {tCta("callUs")}
             </a>
