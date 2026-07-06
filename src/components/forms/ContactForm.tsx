@@ -3,43 +3,81 @@
 import { Link } from "@/i18n/navigation";
 import { trackConversion } from "@/lib/analytics";
 import { useTranslations } from "next-intl";
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import { FadeIn } from "@/components/ui/FadeIn";
 
 type ContactFormProps = {
   defaultInterest?: string;
 };
 
+const getFieldValue = (form: HTMLFormElement, name: string): string => {
+  const field = form.elements.namedItem(name);
+
+  if (field instanceof RadioNodeList) {
+    return String(field.value ?? "").trim();
+  }
+
+  if (field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement) {
+    return field.value.trim();
+  }
+
+  if (field instanceof HTMLSelectElement) {
+    return field.value.trim();
+  }
+
+  return "";
+};
+
+const isGdprAccepted = (form: HTMLFormElement): boolean => {
+  const field = form.elements.namedItem("gdpr");
+  return field instanceof HTMLInputElement && field.checked;
+};
+
 export const ContactForm = ({ defaultInterest = "general" }: ContactFormProps) => {
   const t = useTranslations("contact.form");
   const tCta = useTranslations("cta");
+  const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setIsSubmitting(true);
 
-    const formData = new FormData(event.currentTarget);
+    const form = formRef.current ?? event.currentTarget;
+    const payload = {
+      name: getFieldValue(form, "name"),
+      phone: getFieldValue(form, "phone"),
+      email: getFieldValue(form, "email"),
+      interest: getFieldValue(form, "interest") || "general",
+      message: getFieldValue(form, "message"),
+      gdpr: isGdprAccepted(form),
+    };
+
+    if (
+      !payload.name ||
+      !payload.phone ||
+      !payload.email ||
+      !payload.message ||
+      !payload.gdpr
+    ) {
+      setStatus("error");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setStatus("idle");
 
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.get("name"),
-          phone: formData.get("phone"),
-          email: formData.get("email"),
-          interest: formData.get("interest"),
-          message: formData.get("message"),
-          gdpr: formData.get("gdpr") === "on",
-        }),
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
-        trackConversion("form_submit", String(formData.get("interest") ?? "general"));
+        trackConversion("form_submit", payload.interest);
         setStatus("success");
-        event.currentTarget.reset();
+        form.reset();
       } else {
         setStatus("error");
       }
@@ -66,9 +104,9 @@ export const ContactForm = ({ defaultInterest = "general" }: ContactFormProps) =
   return (
     <FadeIn>
       <form
+        ref={formRef}
         onSubmit={handleSubmit}
         className="space-y-6 rounded bg-white p-6 shadow-sm ring-1 ring-black/5 md:p-8"
-        noValidate
       >
         <div className="grid gap-6 md:grid-cols-2">
           <div>
@@ -145,6 +183,7 @@ export const ContactForm = ({ defaultInterest = "general" }: ContactFormProps) =
             type="checkbox"
             id="gdpr"
             name="gdpr"
+            value="yes"
             required
             className="mt-1 h-4 w-4 rounded border-black/20 text-primary-red focus:ring-primary-red"
           />

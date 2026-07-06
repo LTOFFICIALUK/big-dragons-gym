@@ -6,6 +6,9 @@ const VALID_INTERESTS = new Set(["pt", "nutrition", "membership", "general"]);
 const isValidEmail = (email: string): boolean =>
   /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
+const isGdprAccepted = (value: unknown): boolean =>
+  value === true || value === "true" || value === "on" || value === "yes" || value === 1;
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -14,7 +17,7 @@ export async function POST(request: NextRequest) {
     const email = String(body.email ?? "").trim();
     const interest = String(body.interest ?? "general").trim();
     const message = String(body.message ?? "").trim();
-    const gdpr = Boolean(body.gdpr);
+    const gdpr = isGdprAccepted(body.gdpr);
 
     if (!name || !phone || !email || !message || !gdpr) {
       return NextResponse.json(
