@@ -1,5 +1,16 @@
 import { Resend } from "resend";
-import { BUSINESS, SITE_URL } from "@/lib/constants";
+import { BUSINESS } from "@/lib/constants";
+import {
+  buildButtonRow,
+  buildCalloutBox,
+  buildDetailsTable,
+  buildEmailHeading,
+  buildEmailLayout,
+  buildEmailParagraph,
+  buildEmailSectionTitle,
+  buildStatusBadge,
+  escapeHtml,
+} from "@/lib/email-template";
 
 const CONTACT_EMAIL =
   process.env.CONTACT_EMAIL_TO ?? "mondeisec@gmail.com";
@@ -14,16 +25,6 @@ const getResend = () => {
 
   return new Resend(apiKey);
 };
-
-const BRAND = {
-  red: "#C62828",
-  maroon: "#4A1212",
-  charcoal: "#1A1A1A",
-  muted: "#555555",
-  border: "#E8E8E8",
-  cream: "#FAFAFA",
-  white: "#FFFFFF",
-} as const;
 
 const INTEREST_LABELS: Record<string, string> = {
   pt: "Personal Training",
@@ -40,99 +41,6 @@ export type EnquiryPayload = {
   message: string;
 };
 
-const escapeHtml = (value: string): string =>
-  value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-
-const formatMultilineHtml = (value: string): string =>
-  escapeHtml(value).replace(/\n/g, "<br />");
-
-const buildEmailLayout = (previewText: string, content: string): string => `
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>${escapeHtml(BUSINESS.name)}</title>
-  </head>
-  <body style="margin:0;padding:0;background-color:${BRAND.cream};">
-    <div style="display:none;max-height:0;overflow:hidden;opacity:0;">
-      ${escapeHtml(previewText)}
-    </div>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:${BRAND.cream};padding:32px 16px;">
-      <tr>
-        <td align="center">
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;background-color:${BRAND.white};border:1px solid ${BRAND.border};border-radius:8px;overflow:hidden;">
-            <tr>
-              <td style="padding:28px 32px;background-color:${BRAND.maroon};text-align:center;">
-                <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;color:${BRAND.white};">
-                  ${escapeHtml(BUSINESS.name)}
-                </p>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:32px;font-family:Arial,Helvetica,sans-serif;color:${BRAND.charcoal};">
-                ${content}
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px 32px;background-color:${BRAND.cream};border-top:1px solid ${BRAND.border};">
-                <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.5;color:${BRAND.muted};text-align:center;">
-                  ${escapeHtml(BUSINESS.name)} · ${escapeHtml(BUSINESS.address.street)}, ${escapeHtml(BUSINESS.address.locality)} ${escapeHtml(BUSINESS.address.postalCode)}<br />
-                  <a href="${SITE_URL}" style="color:${BRAND.red};text-decoration:underline;">${SITE_URL.replace("https://", "")}</a>
-                </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>
-`;
-
-const buildParagraph = (text: string): string =>
-  `<p style="margin:0 0 16px;font-size:15px;line-height:1.6;color:${BRAND.charcoal};">${text}</p>`;
-
-const buildDetailsTable = (
-  rows: { label: string; value: string; multiline?: boolean }[],
-): string => {
-  const tableRows = rows
-    .map((row, index) => {
-      const value = row.multiline
-        ? formatMultilineHtml(row.value)
-        : escapeHtml(row.value);
-      const border =
-        index === rows.length - 1
-          ? ""
-          : `border-bottom:1px solid ${BRAND.border};`;
-
-      return `
-        <tr>
-          <td style="padding:14px 18px;${border}">
-            <p style="margin:0 0 4px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:${BRAND.red};">
-              ${escapeHtml(row.label)}
-            </p>
-            <p style="margin:0;font-size:15px;line-height:1.55;color:${BRAND.charcoal};">
-              ${value}
-            </p>
-          </td>
-        </tr>
-      `;
-    })
-    .join("");
-
-  return `
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:8px 0 0;border:1px solid ${BRAND.border};border-radius:6px;background-color:${BRAND.cream};overflow:hidden;">
-      ${tableRows}
-    </table>
-  `;
-};
-
 const buildDetailRows = (payload: EnquiryPayload) => [
   { label: "Name", value: payload.name },
   { label: "Phone", value: payload.phone },
@@ -144,47 +52,68 @@ const buildDetailRows = (payload: EnquiryPayload) => [
   { label: "Message", value: payload.message, multiline: true },
 ];
 
-const buildOwnerEmail = (payload: EnquiryPayload) => {
+export const buildOwnerEmail = (payload: EnquiryPayload) => {
   const intro = "You have received a new enquiry from the Big Dragons Gym website.";
+  const phoneHref = payload.phone.replace(/[^\d+]/g, "");
+
   const content = [
-    `<h1 style="margin:0 0 16px;font-size:22px;line-height:1.3;color:${BRAND.maroon};">New website enquiry</h1>`,
-    buildParagraph(intro),
-    buildParagraph(
-      `Reply directly to <a href="mailto:${escapeHtml(payload.email)}" style="color:${BRAND.red};text-decoration:underline;">${escapeHtml(payload.email)}</a> to follow up.`,
-    ),
+    buildEmailHeading("New website enquiry"),
+    buildEmailParagraph(intro),
+    buildButtonRow([
+      {
+        href: `mailto:${escapeHtml(payload.email)}`,
+        label: `Reply to ${payload.name.split(" ")[0]}`,
+      },
+      {
+        href: `tel:${phoneHref}`,
+        label: "Call back",
+        variant: "secondary",
+      },
+    ]),
+    buildEmailSectionTitle("Enquiry details"),
     buildDetailsTable(buildDetailRows(payload)),
+    buildEmailParagraph(
+      `Reply-to is set to <a href="mailto:${escapeHtml(payload.email)}" style="color:#C62828;text-decoration:underline;">${escapeHtml(payload.email)}</a> — just hit reply on this email to respond.`,
+    ),
   ].join("");
 
   return {
     subject: `New enquiry from ${payload.name} — ${INTEREST_LABELS[payload.interest] ?? payload.interest}`,
-    html: buildEmailLayout(intro, content),
+    html: buildEmailLayout({ previewText: intro, content }),
   };
 };
 
-const buildCustomerEmail = (payload: EnquiryPayload) => {
+export const buildCustomerEmail = (payload: EnquiryPayload) => {
   const previewText =
     "Thanks for your enquiry. We'll be in touch soon.";
+  const phoneHref = BUSINESS.primaryContact.phone.replace(/\s/g, "");
+
   const content = [
-    buildParagraph(`Hi ${escapeHtml(payload.name)},`),
-    buildParagraph(
+    buildStatusBadge("Enquiry received"),
+    buildEmailParagraph(`Hi ${escapeHtml(payload.name)},`),
+    buildEmailParagraph(
       `Thank you for getting in touch with ${escapeHtml(BUSINESS.name)}.`,
     ),
-    buildParagraph(
-      "We have received your enquiry and will be in touch as soon as possible. If you need a quicker response, call Dei on +44 7940 125381.",
+    buildEmailParagraph(
+      "We have received your enquiry and will be in touch as soon as possible.",
     ),
-    `<h2 style="margin:24px 0 8px;font-size:16px;color:${BRAND.maroon};">Summary of your enquiry</h2>`,
+    buildCalloutBox(
+      `<p style="margin:0 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#4A1212;">Need a faster response?</p>
+       <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#1A1A1A;">Call ${escapeHtml(BUSINESS.primaryContact.name)} on <a href="tel:${phoneHref}" style="color:#C62828;text-decoration:none;font-weight:600;">${escapeHtml(BUSINESS.primaryContact.phoneDisplay)}</a></p>`,
+    ),
+    buildEmailSectionTitle("Summary of your enquiry"),
     buildDetailsTable(buildDetailRows(payload)),
-    buildParagraph(
+    buildEmailParagraph(
       "If anything looks incorrect, reply to this email and we will update your enquiry.",
     ),
-    buildParagraph(
-      `Kind regards,<br /><strong style="color:${BRAND.red};">${escapeHtml(BUSINESS.name)}</strong>`,
+    buildEmailParagraph(
+      `Kind regards,<br /><strong style="color:#C62828;">${escapeHtml(BUSINESS.name)}</strong>`,
     ),
   ].join("");
 
   return {
     subject: "We've received your enquiry — Big Dragons Gym",
-    html: buildEmailLayout(previewText, content),
+    html: buildEmailLayout({ previewText, content }),
   };
 };
 
