@@ -10,6 +10,11 @@ export const BUSINESS = {
   },
   phone: "+447940125381",
   phoneDisplay: "+44 7940 125381",
+  secondaryContact: {
+    name: "Jon",
+    phone: "+447415436694",
+    phoneDisplay: "+44 7415 436694",
+  },
   hours: "24/7",
   facebook: "https://www.facebook.com/p/Big-Dragons-Gym-61558675053886/",
   instagram: "https://www.instagram.com/big_dragon_gym/",

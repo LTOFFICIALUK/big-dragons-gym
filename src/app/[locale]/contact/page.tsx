@@ -68,6 +68,23 @@ export default async function ContactPage({ params, searchParams }: Props) {
                 </a>
 
                 <a
+                  href={`tel:${BUSINESS.secondaryContact.phone}`}
+                  className="flex items-center gap-4 rounded bg-gray-100 p-4 transition-colors hover:bg-gray-200"
+                >
+                  <span className="flex h-12 w-12 items-center justify-center rounded bg-maroon text-white">
+                    <Phone className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
+                  </span>
+                  <div>
+                    <p className="text-sm text-brand-black/60">
+                      {BUSINESS.secondaryContact.name}
+                    </p>
+                    <p className="font-semibold text-brand-black">
+                      {BUSINESS.secondaryContact.phoneDisplay}
+                    </p>
+                  </div>
+                </a>
+
+                <a
                   href={BUSINESS.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"

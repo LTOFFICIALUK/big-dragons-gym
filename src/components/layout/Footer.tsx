@@ -66,14 +66,26 @@ export const Footer = () => {
             <p className="mt-4 inline-flex items-center gap-2 rounded bg-primary-red/20 px-3 py-1 text-sm font-semibold text-primary-red">
               {t("open247")}
             </p>
-            <p className="mt-4">
-              <a
-                href={`tel:${BUSINESS.phone}`}
-                className="font-semibold text-white transition-colors hover:text-primary-red"
-              >
-                {BUSINESS.phoneDisplay}
-              </a>
-            </p>
+            <div className="mt-4 space-y-2">
+              <p>
+                <a
+                  href={`tel:${BUSINESS.phone}`}
+                  className="font-semibold text-white transition-colors hover:text-primary-red"
+                >
+                  {BUSINESS.phoneDisplay}
+                </a>
+              </p>
+              <p>
+                <span className="text-sm text-white/60">{BUSINESS.secondaryContact.name}</span>
+                {" · "}
+                <a
+                  href={`tel:${BUSINESS.secondaryContact.phone}`}
+                  className="font-semibold text-white transition-colors hover:text-primary-red"
+                >
+                  {BUSINESS.secondaryContact.phoneDisplay}
+                </a>
+              </p>
+            </div>
             <div className="mt-6 flex gap-3">
               <a
                 href={BUSINESS.instagram}
