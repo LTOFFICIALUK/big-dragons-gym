@@ -13,7 +13,7 @@ export const buildGymSchema = () => ({
     `${SITE_URL}${IMAGES.personalTraining}`,
     `${SITE_URL}${IMAGES.logo}`,
   ],
-  telephone: BUSINESS.phone,
+  telephone: BUSINESS.primaryContact.phone,
   address: {
     "@type": "PostalAddress",
     streetAddress: BUSINESS.address.street,
@@ -92,7 +92,7 @@ export const buildServiceSchema = (
   provider: {
     "@type": ["ExerciseGym", "LocalBusiness"],
     name: BUSINESS.name,
-    telephone: BUSINESS.phone,
+    telephone: BUSINESS.primaryContact.phone,
     address: {
       "@type": "PostalAddress",
       addressLocality: BUSINESS.address.locality,

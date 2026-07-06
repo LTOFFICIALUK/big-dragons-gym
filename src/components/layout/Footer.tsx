@@ -68,11 +68,13 @@ export const Footer = () => {
             </p>
             <div className="mt-4 space-y-2">
               <p>
+                <span className="text-sm text-white/60">{BUSINESS.primaryContact.name}</span>
+                {" · "}
                 <a
-                  href={`tel:${BUSINESS.phone}`}
+                  href={`tel:${BUSINESS.primaryContact.phone}`}
                   className="font-semibold text-white transition-colors hover:text-primary-red"
                 >
-                  {BUSINESS.phoneDisplay}
+                  {BUSINESS.primaryContact.phoneDisplay}
                 </a>
               </p>
               <p>

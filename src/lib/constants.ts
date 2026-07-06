@@ -8,8 +8,11 @@ export const BUSINESS = {
     postalCode: "LL41 3AL",
     country: "United Kingdom",
   },
-  phone: "+447940125381",
-  phoneDisplay: "+44 7940 125381",
+  primaryContact: {
+    name: "Dei",
+    phone: "+447940125381",
+    phoneDisplay: "+44 7940 125381",
+  },
   secondaryContact: {
     name: "Jon",
     phone: "+447415436694",

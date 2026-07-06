@@ -44,7 +44,7 @@ export const HomeHero = () => {
             </p>
 
             <div className="mt-8 sm:mt-10">
-              <a href={`tel:${BUSINESS.phone}`} className="btn-primary text-center">
+              <a href={`tel:${BUSINESS.primaryContact.phone}`} className="btn-primary text-center">
                 {tCta("callUs")}
               </a>
             </div>

@@ -262,7 +262,7 @@ export const Header = () => {
             </div>
 
             <a
-              href={`tel:${BUSINESS.phone}`}
+              href={`tel:${BUSINESS.primaryContact.phone}`}
               className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded bg-primary-red px-4 py-2 text-xs font-bold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-maroon-light hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-red"
             >
               {tCta("callUs")}
@@ -325,7 +325,7 @@ export const Header = () => {
           </div>
           <div className="px-3 pt-2">
             <a
-              href={`tel:${BUSINESS.phone}`}
+              href={`tel:${BUSINESS.primaryContact.phone}`}
               className="btn-primary block text-center"
             >
               {tCta("callUs")}
