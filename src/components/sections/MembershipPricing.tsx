@@ -1,6 +1,5 @@
 import { FadeIn } from "@/components/ui/FadeIn";
-import { Link } from "@/i18n/navigation";
-import { MEMBERSHIP_PRICES, BUSINESS } from "@/lib/constants";
+import { MEMBERSHIP_PRICES, BUSINESS, MEMBERSHIP_SIGNUP_URL } from "@/lib/constants";
 import { getTranslations } from "next-intl/server";
 
 const planKeys = ["monthly", "weekly", "kidsStamp"] as const;
@@ -57,12 +56,14 @@ export const MembershipPricing = async () => {
         <FadeIn className="mt-8 text-center">
           <p className="text-brand-black/70">{t("dealsNote")}</p>
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href={{ pathname: "/contact", query: { interest: "membership" } }}
+            <a
+              href={MEMBERSHIP_SIGNUP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
             >
               {tCta("joinNow")}
-            </Link>
+            </a>
             <a
               href={BUSINESS.whatsapp}
               target="_blank"

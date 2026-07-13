@@ -79,6 +79,10 @@ export const FACILITY_GALLERY = [
   },
 ] as const;
 
+/** ClubRight online membership signup — monthly & weekly plans. */
+export const MEMBERSHIP_SIGNUP_URL =
+  "https://bigdragonsgym.clubright.co.uk/memberarea/selectmembership" as const;
+
 /** Published membership rates (GBP) — keep in sync with in-gym pricing. */
 export const MEMBERSHIP_PRICES = {
   monthly: 30,

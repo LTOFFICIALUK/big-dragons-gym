@@ -1,7 +1,7 @@
 "use client";
 
 import { Link, usePathname } from "@/i18n/navigation";
-import { BUSINESS, IMAGES } from "@/lib/constants";
+import { IMAGES, MEMBERSHIP_SIGNUP_URL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
@@ -262,10 +262,12 @@ export const Header = () => {
             </div>
 
             <a
-              href={`tel:${BUSINESS.primaryContact.phone}`}
+              href={MEMBERSHIP_SIGNUP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded bg-primary-red px-4 py-2 text-xs font-bold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-maroon-light hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-red"
             >
-              {tCta("callUs")}
+              {tCta("joinNow")}
             </a>
           </div>
 
@@ -325,10 +327,12 @@ export const Header = () => {
           </div>
           <div className="px-3 pt-2">
             <a
-              href={`tel:${BUSINESS.primaryContact.phone}`}
+              href={MEMBERSHIP_SIGNUP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary block text-center"
             >
-              {tCta("callUs")}
+              {tCta("joinNow")}
             </a>
           </div>
         </nav>

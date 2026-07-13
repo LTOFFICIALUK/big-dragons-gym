@@ -2,8 +2,7 @@ import { MembershipPricing } from "@/components/sections/MembershipPricing";
 import { PageHero } from "@/components/sections/PageHero";
 import { RelatedBlogLink } from "@/components/sections/RelatedBlogLink";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { Link } from "@/i18n/navigation";
-import { IMAGES } from "@/lib/constants";
+import { IMAGES, MEMBERSHIP_SIGNUP_URL } from "@/lib/constants";
 import { Clock, Dumbbell, ShieldCheck, Users, type LucideIcon } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildPageMetadata } from "@/lib/metadata";
@@ -87,9 +86,14 @@ export default async function MembershipPage({ params }: Props) {
             <p className="mt-4 text-lg leading-relaxed text-brand-black/80">
               {t("howToJoin")}
             </p>
-            <Link href="/contact" className="btn-primary mt-6 inline-flex">
+            <a
+              href={MEMBERSHIP_SIGNUP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-6 inline-flex"
+            >
               {tCta("joinNow")}
-            </Link>
+            </a>
           </FadeIn>
 
           <FadeIn>

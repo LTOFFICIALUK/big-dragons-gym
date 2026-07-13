@@ -2,7 +2,7 @@
 
 import { HeroLocationMap } from "@/components/sections/HeroLocationMap";
 import { SectionTransition } from "@/components/ui/SectionTransition";
-import { BUSINESS, IMAGES } from "@/lib/constants";
+import { IMAGES, MEMBERSHIP_SIGNUP_URL } from "@/lib/constants";
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -44,8 +44,13 @@ export const HomeHero = () => {
             </p>
 
             <div className="mt-8 sm:mt-10">
-              <a href={`tel:${BUSINESS.primaryContact.phone}`} className="btn-primary text-center">
-                {tCta("callUs")}
+              <a
+                href={MEMBERSHIP_SIGNUP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-center"
+              >
+                {tCta("joinNow")}
               </a>
             </div>
           </motion.div>
